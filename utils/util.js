@@ -11,7 +11,11 @@ function formatNumber(n) {
     n = n.toString();
     return n[1] ? n : '0' + n;
 }
-// 经纬度长度处理   截取10位
+/**
+ * 截取经纬度的长度   总共10位（包括小数点）
+ * params n {number} 传入值  经度或纬度  120.1212121212
+ * return str {string} 返回值  120.121212
+ * */ 
 function conversion(n) {
   if (typeof (n) === 'number') n = n.toString()
   let arr = n.split('.')
