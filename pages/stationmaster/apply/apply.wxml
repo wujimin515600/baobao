@@ -1,0 +1,28 @@
+<view id="stationmaster-apply">
+    <block>
+        <view class="apply_input">
+            <view class="apply_name">
+                <text>姓名</text>
+                <input type="text" placeholder="请输入您的真实姓名" bindinput="applyName" />
+            </view>
+            <view class="apply_name last">
+                <text>备注</text>
+                <input type="text" bindinput="applyRemarks" />
+            </view>
+        </view>
+    </block>
+    <!-- 申请须知 -->
+    <block>
+        <view class="apply_guide">
+            <text class="title">申请须知</text>
+            <block>
+                <view wx:for="{{apply_guide}}" wx:key="index" class="guide_detail">
+                    <text class="num">{{item.num}}</text>
+                    <text>{{item.text}}</text>
+                </view>
+            </block>
+            <view class="tips">点击确认表示同意以上须知</view>
+            <button bindtap="suerApply">确认并申请</button>
+        </view>
+    </block>
+</view>

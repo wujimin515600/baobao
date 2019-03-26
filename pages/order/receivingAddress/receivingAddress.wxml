@@ -1,0 +1,33 @@
+<view id="receivingAddress">
+    <form bindsubmit="formSubmit">
+        <view class="receivingAddress">
+            <view class="inputText">
+                <text class="inputLabel">收货地址:</text>
+                <view class="clickmap" bindtap="clickAddress">
+                    <view class="select" wx:if="{{!mapaddress}}">
+                        <text class="mapiocn"></text>
+                        <text class="text">点击选择</text>
+                    </view>
+                    <input type="text" value="{{mapaddress}}" name="mapaddress" data-input-name="mapaddress" wx:else class="dizhi" disabled />
+                    <view class="righticon"></view>
+                </view>
+            </view>
+            <view class="inputText">
+                <text class="inputLabel">门牌号(可不填):</text>
+                <input type="text" placeholder="例:16号楼427室" placeholder-class="phcolor" name="house_number" value="{{house_number}}" data-input-name="house_number" />
+            </view>
+            <view class="inputText">
+                <text class="inputLabel">联系人(可不填):</text>
+                <input type="text" placeholder="请填写收货人" placeholder-class="phcolor" name="contact" value="{{contact}}" data-input-name="contact" />
+            </view>
+            <view class="inputText">
+                <text class="inputLabel">联系电话:</text>
+                <input type="number" placeholder="请填写手机号码" placeholder-class="phcolor" name="phone" value="{{phone}}" data-input-name="phone" bindinput="bindReplaceInput" />
+            </view>
+        </view>
+        <button formType="submit" class="holdAddress {{buttontype==true?'selectaddress':''}}" bindtsubmit="formSubmit" wx:if="{{buttontype==true}}">
+            保存地址
+        </button>
+        <button class="holdAddress" wx:else>保存地址</button>
+    </form>
+</view>

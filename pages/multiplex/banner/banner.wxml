@@ -1,0 +1,16 @@
+<view class='swiper-box'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+        <block wx:for="{{ bannerUrls }}" wx:key="{{index}}">
+            <swiper-item class="imgdiv">
+                <view bindtap="bannerlist">
+                    <image class="slide-image" src="{{ item.url }}" mode='widthFix' data-link='{{item.link}}'></image>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="dots">
+        <block wx:for="{{bannerUrls}}" wx:key="unique">
+            <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+        </block>
+    </view>
+</view>

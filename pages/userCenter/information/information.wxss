@@ -1,0 +1,44 @@
+page {
+  background: #fff;
+}
+
+#information .informationBox {
+  margin-top: 53rpx;
+  padding: 0 30rpx;
+}
+
+#information .informationBox text {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #171A25;
+}
+
+#information .informationBox .loginTel {
+  line-height: 105rpx;
+  border-bottom: 2rpx solid #E3E4EA;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#information .informationBox .realnamebutton {
+  line-height: 105rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#information .informationBox .realnamebutton .renzhen {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #2576F8;
+  margin-right: 18rpx;
+}
+
+#information .informationBox .realnamebutton .realicon {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAYAAAD0OH0aAAAAAXNSR0IArs4c6QAAAQRJREFUOBGV0jFuwjAUBuD3GxV1Z2YkYSoDtwGWFnXpAUhBqoRY6BUqVSpwhO7tRboh9QDdCFL96t9SqgacxPUQ28n/+TlxJMnydW922KdZPpGIZlR17HJdK7JNZ8frJmMMsBDAiqqx0OcmBK7IEMNEHgPTj8f2JlTNg/+gXxCLSiAGnYEmFAR1qBKEkDuC21pA1LvPV2L1gWNAPg0HVS3JjgOo3BXPVeS1sgLDIvrmfp0OAQy2o8v2TRBUhZdL2DNQF/aViv2xbwqXQEyYoMVLusivROX99AW5Zz7/28CwfseFCY0L72JWLqq4g9MvPwFe+J1D2yjCvh8+6UV/fkhKN2smP0kuuxtcBLZmAAAAAElFTkSuQmCC) no-repeat;
+  background-size: cover;
+  width: 12rpx;
+  height: 22rpx;
+  display: inline-block;
+}

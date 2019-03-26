@@ -1,0 +1,306 @@
+page {
+  background: #F7F7F7;
+}
+
+#delivery .delivery {
+  background: #fff;
+  position: relative;
+  min-height: 300rpx;
+  z-index: 3;
+}
+
+#delivery .delivery .deliveryTop {
+  display: flex;
+  position: relative;
+  padding-bottom: 42rpx;
+  border-bottom: 1px solid #E3E4EA;
+  padding-top: 40rpx;
+  margin: 0 30rpx;
+}
+
+#delivery .delivery .deliveryTop .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2rpx;
+  height: 84rpx;
+  background: #E3E4EA;
+  margin: -42rpx 0 0 -1rpx;
+}
+
+#delivery .delivery .deliveryTop .delivery-frequency {
+  text-align: center;
+  flex: 1;
+}
+
+#delivery .delivery .deliveryTop .delivery-frequency .frequency {
+  font-size: 30rpx;
+  color: #858EA0;
+  font-family: PingFangSC-Regular;
+}
+
+#delivery .delivery .deliveryTop .delivery-frequency .frequency .frequency-num {
+  font-family: DINAlternate-Bold;
+  font-size: 70rpx;
+  color: #171A25;
+  line-height: 82rpx;
+}
+
+#delivery .delivery .deliveryTop .delivery-frequency .frequency-numall {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #858EA0;
+}
+
+#delivery .delivery .deliveryTop .delivery-money {
+  flex: 1;
+  text-align: center;
+}
+
+#delivery .delivery .deliveryTop .delivery-money .money {
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #858EA0;
+}
+
+#delivery .delivery .deliveryTop .delivery-money .money .moneynum {
+  font-family: DINAlternate-Bold;
+  font-size: 70rpx;
+  color: #171A25;
+}
+
+#delivery .delivery .deliveryTop .delivery-money .moneyall {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #858EA0;
+}
+
+#delivery .delivery .more-list {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 206rpx;
+  background: #fff;
+  z-index: 2;
+}
+
+#delivery .delivery .more-list .moreDate {
+  background: #fff;
+  padding: 0 30rpx;
+}
+
+#delivery .delivery .more-list .moreDate .listData {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 30rpx;
+  align-items: center;
+}
+
+#delivery .delivery .more-list .moreDate .listData .moreName {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #3A4159;
+}
+
+#delivery .delivery .more-list .moreDate .listData .moreName image {
+  width: 70rpx;
+  height: 80rpx;
+  vertical-align: middle;
+}
+
+#delivery .delivery .more-list .moreDate .listData .moreKg {
+  font-family: DINAlternate-Bold;
+  font-size: 30rpx;
+  color: #3A4159;
+}
+
+#delivery .delivery .more-list .moreDate .listData .moreMoney {
+  font-family: PingFangSC-Medium;
+  font-size: 26rpx;
+  color: #3A4159;
+}
+
+#delivery .delivery .more-list .moreDate .listData .moreMoney text {
+  font-family: DINAlternate-Bold;
+  font-size: 30rpx;
+  color: #3A4159;
+  line-height: 40rpx;
+}
+
+#delivery .delivery .more-list .deliveryMore {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #858EA0;
+  line-height: 97rpx;
+  background: #fff;
+  text-align: center;
+}
+
+#delivery .delivery .more-list .deliveryMore .downicon {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAALCAYAAAByF90EAAAAAXNSR0IArs4c6QAAAPZJREFUKBVj+P//P2N//3oBBjJB+7SlgiCtzGwCygv/MPxY5OwZ9GLvjvXnSDGvrX9RGcPffzudPQL5mZgY/r///5+BleH//5ltExalEmtQ+4SF5f///+sE+oiZgfH/eyYhLu1SRkaGDSAvEmsYyJB///53gC1lZFhQmR/fxgjizJx5hvXttyurgC4LYGRk/M/AyJheVRA3G5vr0A2pKohPBur5BzaIWMNwGQLSDzeIkGH4DMEwCJdhwMATQg4TmHdA6mEAxUUwQfQwA0cESBIYsNgMgUjBdKPRyIaBpfAYgtcgkCTUsK7/DAxfgS6pA8UO2FAsBACkLKo7AnqrnwAAAABJRU5ErkJggg==) no-repeat;
+  width: 17.6rpx;
+  height: 9.9rpx;
+  vertical-align: middle;
+  display: inline-block;
+  background-size: cover;
+}
+
+#delivery .delivery .more-list .deliveryMore .upicon {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAKCAYAAAC5Sw6hAAAAAXNSR0IArs4c6QAAANRJREFUKBVjZMADOvsWmfxh+L+KkZHhhDCXdnx6uslvXMoZcUm0T1po+O/P/z1AeSGQGqBhG4S5dMJwGcaEzSBkQ4A2vWBkZPz//z9DwNtvV1bNnHmGFZseDIOQDQE64y4zC4spkE4nZBiK19ANYWFmdijPi3kCckHbhEWpDP//zwQ6DWgmpjfhBuEzBOYVfIaBDSLGEEKGMZJiCD7DmP7/YVgBVCAECljkMIFpwkZXFcTNRomA79cymRgY/+8GBt4BYg2BGQw27D9DIjBsLjMwMVwEAHpDlueB/ImCAAAAAElFTkSuQmCC) no-repeat;
+  width: 17.6rpx;
+  height: 9.9rpx;
+  vertical-align: middle;
+  display: inline-block;
+  background-size: cover;
+}
+
+#delivery .deliveryList .deliveryListItem {
+  background: #fff;
+  margin-top: 30rpx;
+}
+
+#delivery .deliveryList .deliveryListItem .deliveryListDetail {
+  padding: 30rpx;
+}
+
+#delivery .deliveryList .deliveryListItem .deliveryListDetail .item-top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#delivery .deliveryList .deliveryListItem .deliveryListDetail .item-top .deliveryName {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #3A4159;
+  line-height: 42rpx;
+  font-weight: 500;
+}
+
+#delivery .deliveryList .deliveryListItem .deliveryListDetail .item-top .deliveryMoney {
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #3A4159;
+}
+
+#delivery .deliveryList .deliveryListItem .deliveryListDetail .item-top .deliveryMoney text {
+  font-family: DINAlternate-Bold;
+  font-size: 36rpx;
+  color: #3A4159;
+}
+
+#delivery .deliveryList .deliveryListItem .deliveryListDetail .item-top .icon {
+  display: inline-block;
+  margin-left: 28rpx;
+}
+
+#delivery .deliveryList .deliveryListItem .deliveryListDetail .item-top .icon image {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+}
+
+#delivery .deliveryList .deliveryListItem .deliveryTime {
+  font-family: PingFangSC-Light;
+  font-size: 28rpx;
+  color: #858EA0;
+}
+
+#delivery .nextlist {
+  padding: 0 30rpx;
+  height: 0;
+  overflow: hidden;
+}
+
+#delivery .nextlist .nextlistDetail {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-top: 2rpx solid #E3E4EA;
+  border-bottom: 2rpx solid #E3E4EA;
+  padding: 32rpx 0;
+  opacity: 0;
+  position: relative;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+#delivery .nextlist .nextlistDetail .title {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #858EA0;
+}
+
+#delivery .nextlist .nextlistDetail .num {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #858EA0;
+}
+
+#delivery .nextlist .nextlistDetail .num text {
+  font-family: DINAlternate-Bold;
+  font-size: 28rpx;
+  color: #858EA0;
+}
+
+#delivery .nextlist .nextlistDetail .cash {
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #2576F8;
+  margin-right: 16px;
+}
+
+#delivery .nextlist .nextlistDetail .cash text {
+  font-family: DINAlternate-Bold;
+  font-size: 28rpx;
+  color: #2576F8;
+}
+
+#delivery .nextlist .navigator-box-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#delivery .nextlist .nextmoney {
+  text-align: right;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #3A4159;
+  padding: 30rpx 0;
+  margin-right: 16px;
+}
+
+#delivery .nextlist .nextmoney text {
+  font-family: DINAlternate-Bold;
+  font-size: 28rpx;
+  color: #2576F8;
+}
+
+#delivery .nextlist .nextmoney text:last-child {
+  font-family: DINAlternate-Bold;
+  font-size: 24rpx;
+  color: #2576F8;
+}
+
+#delivery .kind-list-item-bd-show {
+  height: auto;
+}
+
+#delivery .nodata {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #858EA0;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+#delivery .zhebic {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

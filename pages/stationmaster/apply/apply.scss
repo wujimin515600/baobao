@@ -1,0 +1,82 @@
+page {
+    background: #fafafa;
+}
+
+#stationmaster-apply {
+    border-top: 1rpx solid #E3E4EA;
+
+    .apply_input {
+        background: #fff;
+
+        .apply_name {
+            line-height: 105rpx;
+            border-bottom: 1rpx solid #E3E4EA;
+            margin: 0 30rpx;
+            display: flex;
+            align-items: center;
+
+            text {
+                font-size: 32rpx;
+                color: #171A25;
+            }
+
+            input {
+                line-height: 105rpx;
+                margin-left: 74rpx;
+                font-family: PingFangSC-Regular;
+                font-size: 32rpx;
+                color: #171A25;
+            }
+
+        }
+
+        .last {
+            border-bottom: 0
+        }
+    }
+
+    .apply_guide {
+        font-size: 28rpx;
+        color: #3A4159;
+        margin: 40rpx 37rpx 0;
+
+        .title {
+            margin-bottom: 18rpx;
+            display: block;
+        }
+
+        .guide_detail {
+            display: flex;
+
+            text {
+                font-size: 24rpx;
+                color: #3A4159;
+                line-height: 40rpx;
+                display: block;
+            }
+
+            .num {
+                margin-right: 10rpx;
+            }
+        }
+
+        .tips {
+            text-align: center;
+            margin-top: 25rpx;
+        }
+
+        button {
+            display: block;
+            background: #236BF6;
+            border-radius: 12rpx;
+            font-family: PingFangSC-Regular;
+            font-size: 32rpx;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 82rpx;
+            width: 504rpx;
+            margin: 75rpx auto 0;
+
+        }
+    }
+}

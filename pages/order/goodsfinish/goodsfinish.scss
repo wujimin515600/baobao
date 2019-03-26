@@ -1,0 +1,102 @@
+page {
+    background: #fff;
+}
+
+#goodsfinish {
+    padding: 0 39rpx;
+
+    .titleImg {
+        width: 345rpx;
+        height: 294rpx;
+        margin: 49rpx auto 0;
+        display: block;
+    }
+
+    .titleText {
+        font-family: PingFangSC-Medium;
+        font-size: 34rpx;
+        color: #171A25;
+        margin: 15rpx 0 52rpx;
+        text-align: center;
+        display: block;
+        font-weight: bold;
+    }
+
+    .list-finish {
+        .finistList {
+            display: flex;
+            margin: 32rpx 0 0 90rpx;
+
+            image {
+                display: block;
+                width: 40rpx;
+                height: 40rpx;
+                margin: 0 14rpx 0 0;
+            }
+
+            text {
+                flex: 1;
+                font-size: 30rpx;
+                font-family: PingFangSC-Regular;
+                color: #3A4159;
+            }
+        }
+    }
+
+    .layout-show {
+        image {
+            width: 30rpx;
+            height: 16rpx;
+            margin: 0 auto;
+            display: block;
+        }
+
+    }
+
+
+
+    .summary {
+        margin-top: 100rpx;
+
+        .summaryTitle {
+            font-size: 32rpx;
+            text-align: center;
+            font-weight: 500;
+            font-family: PingFangSC-Medium;
+            color: #3A4159;
+        }
+
+        .summaryMoney {
+            font-size: 28rpx;
+            color: #171A25;
+            text-align: center;
+
+            text {
+                font-family: DINAlternate-Bold;
+                color: #171A25;
+                font-size: 80rpx;
+                font-weight: bold;
+                line-height: 93rpx;
+            }
+        }
+
+        .summarySmallTitle {
+            text-align: center;
+            font-size: 26rpx;
+            color: #858EA0;
+        }
+    }
+
+    .finistButton {
+        width: 672rpx;
+        height: 96rpx;
+        line-height: 96rpx;
+        background-image: linear-gradient(-90deg, #215FF4 0%, #298CFC 100%);
+        border-radius: 48rpx;
+        font-size: 36rpx;
+        display: block;
+        margin: 141rpx auto 0;
+        font-family: PingFangSC-Regular;
+        color: #F4F4F2;
+    }
+}

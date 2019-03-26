@@ -1,0 +1,27 @@
+/* pages/agreement/agreement.wxss */
+page {
+    padding: 30rpx;
+    box-sizing: border-box;
+
+    text {
+        font-family: PingFangSC-Regular;
+        font-size: 28rpx;
+        color: #3A4159;
+        letter-spacing: 1.2rpx;
+    }
+
+    view {
+        margin-bottom: 30rpx;
+        font-family: PingFangSC-Regular;
+        font-size: 28rpx;
+        color: #3A4159;
+    }
+
+    .title {
+        font-family: PingFangSC-Medium;
+        font-size: 36rpx;
+        color: #171A25;
+        letter-spacing: 0;
+        margin-bottom: 30rpx;
+    }
+}

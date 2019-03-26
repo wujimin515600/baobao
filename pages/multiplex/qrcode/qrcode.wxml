@@ -1,0 +1,4 @@
+<image src="{{qrcode}}" class="qrcode" bindtap="pervier"></image>
+<view class="qrcodeBox {{classtype==true?'qrcodeBoxto':'qrcodeBoxclose'}}" wx:if="{{types==true}}" bindtap='closeQy'>
+    <image src="{{qrcode}}" class="qrcode"></image>
+</view>

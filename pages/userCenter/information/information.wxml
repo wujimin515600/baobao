@@ -1,0 +1,16 @@
+<view id="information">
+    <view class="informationBox">
+        <view class="loginTel">
+            <text>登录手机号</text>
+            <text>{{phone}}</text>
+        </view>
+        <!-- <view class="realnamebutton" bindtap="realname">
+            <text>实名认证</text>
+            <view class="renzhen" wx:if="{{realType==false}}">
+                认证
+                <text class="realicon"></text>
+            </view>
+            <text wx:else>已认证</text>
+        </view> -->
+    </view>
+</view>

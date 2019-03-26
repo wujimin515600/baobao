@@ -1,0 +1,113 @@
+#realPrice {
+  padding-bottom: 160rpx;
+}
+
+#realPrice .real_icon {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 44rpx;
+}
+
+#realPrice .real_icon .icon_list {
+  text-align: center;
+  margin-top: 37rpx;
+  width: 25%;
+}
+
+#realPrice .real_icon .icon_list .icon_img {
+  width: 95rpx;
+  height: 95rpx;
+}
+
+#realPrice .real_icon .icon_list .icon_title {
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #858EA0;
+}
+
+#realPrice .real_icon .icon_list.active .icon_title {
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #3A4159;
+}
+
+#realPrice .real_icon .icon_list:nth-child(4n+1) {
+  margin-left: 0;
+}
+
+#realPrice .real_icon .icon_list:nth-child(-n+4) {
+  margin-top: 0;
+}
+
+#realPrice .price_list {
+  margin-top: 40rpx;
+  padding: 0 30rpx;
+}
+
+#realPrice .price_list .list_item {
+  border-bottom: 1px solid #E3E4EA;
+  display: flex;
+  justify-content: space-between;
+  line-height: 93rpx;
+}
+
+#realPrice .price_list .list_item .item_title {
+  margin-left: 10rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #171A25;
+}
+
+#realPrice .price_list .list_item .item_price {
+  font-family: PingFangSC-Medium;
+  font-size: 40rpx;
+  color: #171A25;
+  margin-right: 10rpx;
+}
+
+#realPrice .price_list .list_item .item_price .item_unit {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #171A25;
+  margin-left: 15rpx;
+  width: 106rpx;
+  text-align: right;
+}
+
+#realPrice .price_list .list_item:last-child {
+  border-bottom: 0;
+}
+
+#realPrice .price_list .no_data {
+  text-align: center;
+  margin-top: 182rpx;
+}
+
+#realPrice .price_list .no_data .no_data_title {
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #3A4159;
+}
+
+#realPrice .price_list .no_data .no_data_pn {
+  font-family: Helvetica;
+  font-size: 34rpx;
+  color: #2781FA;
+  margin-top: 40rpx;
+}
+
+#realPrice .go_tolist {
+  background: #2577F8;
+  border-radius: 12rpx;
+  width: 690rpx;
+  height: 82rpx;
+  line-height: 82rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

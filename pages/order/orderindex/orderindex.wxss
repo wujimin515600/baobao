@@ -1,0 +1,352 @@
+page {
+  background: #f7f7f7;
+}
+
+#orderIndex {
+  padding-bottom: 120rpx;
+}
+
+#orderIndex .orderTop {
+  background: #fff;
+  padding: 0 30rpx 16rpx;
+}
+
+#orderIndex .orderTop .orderList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-bottom: 2rpx solid #E3E4EA;
+}
+
+#orderIndex .orderTop .orderList .listItem {
+  margin: 30rpx 0 0;
+  width: 231rpx;
+  padding-bottom: 30rpx;
+}
+
+#orderIndex .orderTop .orderList .listItem .shopimg {
+  width: 81rpx;
+  height: 81rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+#orderIndex .orderTop .orderList .listItem .list-name {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #3A4159;
+  line-height: 40rpx;
+  display: block;
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+#orderIndex .orderTop .orderList .listItem .list-price {
+  display: block;
+  line-height: 40rpx;
+  margin-bottom: 16rpx;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#orderIndex .orderTop .orderList .listItem .list-price .price {
+  font-family: PingFangSC-Medium;
+  font-size: 26rpx;
+  color: #0B0013;
+}
+
+#orderIndex .orderTop .orderList .listItem .list-price .unit {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #171A25;
+}
+
+#orderIndex .orderTop .orderList .listItem .list-price .prcs {
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #2576F8;
+}
+
+#orderIndex .orderTop .orderList .listItem .inputText {
+  display: flex;
+  justify-content: center;
+}
+
+#orderIndex .orderTop .orderList .listItem:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+#orderIndex .orderTop .orderList .listItem:last-child {
+  border-bottom: 0;
+}
+
+#orderIndex .orderTop .orderList .listItem:nth-child(7) {
+  border-bottom: 0;
+}
+
+#orderIndex .orderTop .uptime {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #858EA0;
+  text-align: right;
+  margin-top: 10rpx;
+}
+
+#orderIndex .orderAdress {
+  padding: 28rpx 30rpx 32rpx;
+  margin-top: 30rpx;
+  background: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#orderIndex .orderAdress .orderAdress-left .adress {
+  font-family: PingFangSC-Medium;
+  font-size: 34rpx;
+  color: #171A25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 580rpx;
+  display: block;
+}
+
+#orderIndex .orderAdress .orderAdress-left .adressname {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 28rpx;
+  margin-top: 15rpx;
+}
+
+#orderIndex .orderAdress .orderAdress-left .adressname .name {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #3A4159;
+  display: inline-block;
+  margin-right: 10rpx;
+}
+
+#orderIndex .orderAdress .orderAdress-left .adressname .tel {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #3A4159;
+  display: inline-block;
+}
+
+#orderIndex .orderAdress .orderAdress-right image {
+  width: 33rpx;
+  height: 33rpx;
+  display: block;
+}
+
+#orderIndex .orderAdress .adress-right image {
+  width: 33rpx;
+  height: 33rpx;
+  margin-top: 10rpx;
+  display: block;
+}
+
+#orderIndex .placeOrder {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  height: 98rpx;
+  line-height: 98rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+#orderIndex .placeOrder .placeOrderText {
+  padding-left: 44rpx;
+  width: 420rpx;
+}
+
+#orderIndex .placeOrder .placeOrderText .placetext {
+  line-height: 66rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #171A25;
+  letter-spacing: 0;
+}
+
+#orderIndex .placeOrder .placeOrderText .placetext .text {
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #171A25;
+  letter-spacing: 0;
+}
+
+#orderIndex .placeOrder .placeOrderText .placetext .placemoney {
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #171A25;
+  letter-spacing: 0;
+}
+
+#orderIndex .placeOrder .placeOrderText .placetext .placeunit {
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #171A25;
+  letter-spacing: 0;
+}
+
+#orderIndex .placeOrder .placeOrderText .limit-title {
+  text-align: left;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #858EA0;
+  display: block;
+  line-height: 26rpx;
+}
+
+#orderIndex .placeOrder .nextOrder {
+  background: #2576F8;
+  line-height: 98rpx;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  width: 275rpx;
+}
+
+#orderIndex .orderPlace {
+  background: #fff;
+  border-radius: 8rpx 8rpx 0 0;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 100rpx;
+  left: 0;
+  z-index: 2;
+  overflow-y: scroll;
+  padding-bottom: 10rpx;
+}
+
+#orderIndex .orderPlace .orderPlace-list {
+  position: relative;
+  line-height: 120rpx;
+  height: 120rpx;
+}
+
+#orderIndex .orderPlace .orderPlace-list .innt {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-bottom: 2rpx solid #C9CDD7;
+}
+
+#orderIndex .orderPlace .orderPlace-list .innt .orderPlacebox {
+  padding: 0 30rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  line-height: 120rpx;
+  height: 120rpx;
+  transition: left 0.2s ease-in-out;
+  width: 90%;
+}
+
+#orderIndex .orderPlace .orderPlace-list .innt .orderPlacebox .list-left image {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+  margin-right: 30rpx;
+}
+
+#orderIndex .orderPlace .orderPlace-list .innt .orderPlacebox .list-left text {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #3A4159;
+}
+
+#orderIndex .orderPlace .orderPlace-list .innt .orderPlacebox .list-middle .price {
+  font-family: PingFangSC-Medium;
+  font-size: 28rpx;
+  color: #171A25;
+}
+
+#orderIndex .orderPlace .orderPlace-list .innt .orderPlacebox .list-middle .unit {
+  font-family: PingFangSC-Medium;
+  font-size: 26rpx;
+  color: #0B0013;
+}
+
+#orderIndex .orderPlace .orderPlace-list .innt .orderPlacebox .list-right {
+  margin-top: 20rpx;
+}
+
+#orderIndex .orderPlace .orderPlace-list .innt .orderPlacebox .list-right .textnum {
+  vertical-align: 14rpx;
+  width: 72rpx;
+  display: inline-block;
+}
+
+#orderIndex .orderPlace .orderPlace-list .innt .topthree {
+  background: #F1492F;
+  width: 141rpx;
+  border-radius: 0 8rpx 0 0;
+  right: -141rpx;
+  height: 120rpx;
+}
+
+#orderIndex .orderPlace .orderPlace-list .innt .topthree image {
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  margin: 22rpx auto 0;
+}
+
+#orderIndex .orderPlace .orderPlace-list .innt .topthree text {
+  font-family: PingFangSC-Medium;
+  font-size: 26rpx;
+  color: #FFFFFF;
+  letter-spacing: 1.39rpx;
+  text-align: center;
+  line-height: 37rpx;
+  display: block;
+  margin-top: 5rpx;
+}
+
+#orderIndex .drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+}
+
+#orderIndex .reduce {
+  width: 45rpx;
+  height: 45rpx;
+  text-align: center;
+  line-height: 45rpx;
+}
+
+#orderIndex .textnum {
+  margin: 0 10rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #171A25;
+  line-height: 45rpx;
+  width: 72rpx;
+  text-align: center;
+}
+
+#orderIndex .add {
+  width: 45rpx;
+  height: 45rpx;
+  text-align: center;
+  line-height: 45rpx;
+}

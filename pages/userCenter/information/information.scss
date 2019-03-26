@@ -1,0 +1,46 @@
+page {
+    background: #fff;
+}
+
+#information {
+    .informationBox {
+        margin-top: 53rpx;
+        padding: 0 30rpx;
+
+        text {
+            font-family: PingFangSC-Regular;
+            font-size: 32rpx;
+            color: #171A25;
+        }
+
+        .loginTel {
+            line-height: 105rpx;
+            border-bottom: 2rpx solid #E3E4EA;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        .realnamebutton {
+            line-height: 105rpx;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            .renzhen {
+                font-family: PingFangSC-Regular;
+                font-size: 32rpx;
+                color: #2576F8;
+                margin-right: 18rpx;
+            }
+
+            .realicon {
+                background: url(/images/center/right.png) no-repeat;
+                background-size: cover;
+                width: 12rpx;
+                height: 22rpx;
+                display: inline-block;
+            }
+        }
+    }
+}

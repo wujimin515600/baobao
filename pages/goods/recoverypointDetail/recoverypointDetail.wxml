@@ -1,0 +1,61 @@
+<view id="recoverypointDetail">
+    <view class="mapdetial">
+        <map id="map" longitude="{{location.longitude}}" latitude="{{location.latitude}}" scale="14" markers="{{markers}}" bindcontroltap="controltap" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height:625rpx;"></map>
+        <cover-view class="gpsButton" bindtap="gpsClick">
+            <cover-image class="img" src="/images/daoh.png" />
+        </cover-view>
+    </view>
+    <block>
+        <view class="details">
+            <view class="details-top">
+                <view class="details-title">
+                    <view class="title-name">
+                        <image src="/images/dingweiweizhi.png" class="mapicon"></image>
+                        <text>{{markers[0].name}}</text>
+                    </view>
+                    <view class="recover-name">
+                        <image src="/images/recoverydetailicon.png" class="recoveryicon"></image>
+                        <text>{{markers[0].admin_name}}</text>
+                    </view>
+                </view>
+                <view class="details-address">
+                    <view class="addressKm">
+                        {{markers[0].distance?filter.Format(markers[0].distance/1000):0}}km
+                    </view>
+                    <view class="addresstitle">
+                        <text></text>
+                        <text>{{markers[0].loc_desc}}</text>
+                    </view>
+                </view>
+            </view>
+            <block>
+                <scroll-view scroll-y style='height:{{boxHeight}}px;' bindscrolltolower="lower">
+                    <view class="details-list">
+                        <view class="details-listBox" wx:for="{{labelList}}" wx:key="{{index}}">
+                            <image src="{{item.icon}}"></image>
+                            <view class="text">
+                                <view class="text-name">{{item.c_type}}</view>
+                                <view class="text-weight" wx:if="{{item.min_price==null&&item.max_price==null}}">
+                                    <view class="num">价格面议</view>
+                                </view>
+                                <view class="text-weight" wx:else>
+                                    <view class="num">
+                                        {{item.min_price?item.min_price:0}} - {{item.max_price?item.max_price:0}}
+                                    </view>
+                                    <view class="kg">{{item.unit==0?'个/元':'元/公斤'}}</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </scroll-view>
+            </block>
+            <block>
+                <view class="telbutton" bindtap="tel">
+                    <image src="/images/phone.png"></image>
+                    <text>电话联系</text>
+                </view>
+            </block>
+        </view>
+    </block>
+</view>
+<wxs module="filter" src="../../../utils/tofixed.wxs"></wxs>

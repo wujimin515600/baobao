@@ -1,0 +1,174 @@
+<view id="recovery">
+    <block>
+        <view class="recovery_top">
+            <view class="recovery_address">
+                <image src="/images/dingweiweizhi.png" />
+                <!-- <input type="text" placeholder="请输入上门地址" /> -->
+                <block>
+                    <view class="orderAdress" bindtap="moveAddress">
+                        <view class="orderAdress-left" wx:if="{{addressType==true}}">
+                            <view class="adress">{{takeAddress.address}}</view>
+                            <view class="adressname">
+                                <view class="name" wx:if="{{takeAddress.contact}}">
+                                    {{takeAddress.contact}}
+                                </view>
+                                <view class="tel">{{tel}}</view>
+                            </view>
+                        </view>
+                        <view class="orderAdress-left" wx:else>
+                            <text class="adress_texg">请输入上门地址</text>
+                        </view>
+                        <view class="{{addressType==true?'orderAdress-right':'adress-right'}}">
+                            <image src="/images/order/bianji.png" />
+                        </view>
+                    </view>
+                </block>
+            </view>
+            <view class="recovery_times">
+                <view class="select_text">
+                    <image src="/images/recovery/times.png" />
+                    <view class="text">预约时间</view>
+                </view>
+                <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" range="{{timeList}}" range-key="str">
+                    <view class="select_time" bindtap="" data-statu="open" data-type="times">
+                        {{!selectTime.value?'点击选择预约时间':selectTime.str}}
+                        <!-- <view class="time_text" wx:if="{{!selectTime.value}}"></view>
+                        <view class="time_text" wx:else>{{}}</view> -->
+                        <image src="/images/righticon.png" />
+                    </view>
+                </picker>
+                <!-- <view class="select_time" bindtap="powerDrawer" data-statu="open" data-type="times">
+                    <view class="time_text" wx:if="{{!day}}">点击选择预约时间</view>
+                    <view class="time_text" wx:else>{{day}}  {{selectTime.time}}</view>
+                    <image src="/images/righticon.png" />
+                </view> -->
+            </view>
+        </view>
+    </block>
+    <block>
+        <view class="recovery_main">
+            <block>
+                <view class="recovery_list">
+                    <view class="list_top">
+                        <view class="list_title">回收清单</view>
+                        <view class="list_add" wx:if="{{addorder.length>0}}" bindtap="powerDrawer" data-statu="open" data-type="price">
+                            <image src="/images/recovery/addicon.png" />
+                            继续添加
+                        </view>
+                    </view>
+                    <view class="list_data">
+                        <button class="now_button" bindtap="powerDrawer" data-statu="open" data-type="price" wx:if="{{addorder.length==0}}">
+                            +立即添加
+                        </button>
+                        <view class="add_list">
+                            <view class="add_data" wx:for="{{addorder}}" wx:key="{{index}}" wx:for-index="bindex">
+                                <view class="name">{{item.name}}</view>
+                                <view class="price" wx:if="{{item.quantity_max}}">
+                                    {{item.quantity}}-{{item.quantity_max}}kg
+                                </view>
+                                <view class="price" wx:else>{{item.quantity}}kg以上</view>
+                                <view class="layout-right">
+                                    <view class="price" wx:if="{{item.price1}}">
+                                        {{item.price}}-{{item.price1}}元
+                                    </view>
+                                    <view class="price" wx:else>{{item.price}}元以上</view>
+                                    <view class="deiimg" data-bindex="{{bindex}}" bindtap="delorder" data-catoridx="{{item.index}}">
+                                        <image src="/images/recovery/delicon.png" alt="" />
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+            <block>
+                <view class="recovery_remarks">
+                    <view class="remarks_title">留言备注</view>
+                    <textarea placeholder="可描述物品的状态（干、湿程度）、特殊要求" wx:if="{{!showModalStatus && !showModaltimeStatus}}"></textarea>
+                </view>
+            </block>
+            <block>
+                <view class="recovery_relief">
+                    <image src="" />
+                    <view class="relief_title">点击确认表示同意</view>
+                    <view class="relief_name" bindtap="linkAgreement">《保保回收上门回收免责条款》</view>
+                </view>
+            </block>
+        </view>
+    </block>
+    <block>
+        <view class="placeOrder">
+            <view class="placeOrderText" bindtap="powerDrawer" data-statu="open" data-type="price">
+                <view class="placetext">
+                    <text class="placeOrdericon"></text>
+                    <text class="text">预计</text>
+                    <block wx:if="{{allprice2}}">
+                        <view class="placemoney">{{allprice1+' - '+allprice2}}</view>
+                        <view class="placeunit">元</view>
+                    </block>
+                    <block wx:else>
+                        <view class="placemoney">{{allprice1}}</view>
+                        <view class="placeunit">元以上</view>
+                    </block>
+                </view>
+                <!-- <view class="limit-title">重量>20KG可上门回收</view> -->
+            </view>
+            <view class="nextOrder" bindtap="addorder" wx:if="{{showModalStatus==true}}">
+                加入回收清单
+            </view>
+            <view class="nextOrder" bindtap="placeOrder" wx:else>一键回收</view>
+        </view>
+    </block>
+    <!-- 添加物品 -->
+    <view class="orderPlace layout-pick" animation="{{animationData}}" wx:if="{{showModalStatus}}">
+        <scroll-view scroll-y>
+            <view class="orderPlace-list">
+                <view class="layout-header">
+                    <view>添加上门回收废品</view>
+                    <image src="/images/icon-close.png" alt="" class="close" bindtap="powerDrawer" data-statu="close" />
+                </view>
+                <view class="cator_label">
+                    <view class="cator_label_div {{item.checked==true?'is_checked':''}}" wx:for="{{cator}}" wx:key="{{checks}}" wx:for-index="index" bindtap="clicks" data-current='{{item}}' data-index='{{index}}' wx:if="{{index<7}}">
+                        {{item.name}}
+                    </view>
+                    <view class="format">
+                        <view class="format_titel">规格</view>
+                        <view class="format_label" wx:for="{{format_labek}}" wx:if="{{currentTab==index}}" wx:key="{{index}}">
+                            <radio-group name="checkbox" class="format_label_div">
+                                <label bindtap='format_click' wx:for="{{item.labek}}" wx:key="{{checks}}" wx:for-index="subidx" data-index="{{index}}" data-subidx="{{subidx}}" wx:for-item="labelitem" class='{{labelitem.checked==true?"is_checked":""}}'>
+                                    <checkbox value="{{labelitem.weight1-labelitem.weight2}}" data-val="{{labelitem.name}}" hidden='false' checked='{{labelitem.checked}}' />
+                                    <view wx:if="{{labelitem.weight2}}">
+                                        {{labelitem.weight1}}-{{labelitem.weight2}}kg
+                                    </view>
+                                    <view wx:else>{{labelitem.weight1}}kg以上</view>
+                                </label>
+                            </radio-group>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <!-- 选择时间 -->
+    <view class="selectTimes layout-pick" animation="{{animationData}}" wx:if="{{showModaltimeStatus}}">
+        <view class="layout-header">
+            <view>选择上门时间</view>
+            <!-- <image src="" /> -->
+        </view>
+        <scroll-view scroll-y>
+            <view class="selectTimes-list">
+                <view class="time_list">
+                    <view wx:for="{{timeList}}" wx:key="{{index}}" class="time_nav">
+                        <view class="time_name">{{item.day}}</view>
+                        <view class="time_l">
+                            <view wx:for="{{item.time_list}}" wx:key="{{index}}" wx:for-item="timeItem" bindtap="clicktime" data-day='{{item.day}}' data-time='{{timeItem}}'>
+                                {{timeItem.time}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus||showModaltimeStatus}}"></view>
+</view>

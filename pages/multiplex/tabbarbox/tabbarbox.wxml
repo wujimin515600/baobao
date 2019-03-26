@@ -1,0 +1,12 @@
+<view class="tabBarbox">
+    <block wx:for="{{list}}" wx:for-item="item" wx:key="index">
+        <view class="tabBar-item">
+            <view class="navigator" bindtap="navClick" data-item="{{item}}">
+                <view>
+                    <image class="icon" src='{{item.iconPath}}'></image>
+                </view>
+                <view class="tabBartext">{{item.text}}</view>
+            </view>
+        </view>
+    </block>
+</view>

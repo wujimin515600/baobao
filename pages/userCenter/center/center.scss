@@ -1,0 +1,330 @@
+page {
+    background: #f7f7f7;
+}
+
+#center {
+    .center-top {
+        background: #fff;
+        padding: 62rpx 30rpx 20rpx;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        .phoneNumber {
+            font-family: PingFangSC-Medium;
+            font-size: 52rpx;
+            color: #171a25;
+            font-weight: bold;
+        }
+
+        .peopleImg {
+            image {
+                width: 114rpx;
+                height: 114rpx;
+                display: inline-block;
+            }
+
+            .centericon {
+                background: url(/images/center/Triangle.png) no-repeat;
+                background-size: cover;
+                width: 9rpx;
+                height: 22rpx;
+                margin-left: 20rpx;
+                display: inline-block;
+                vertical-align: 48rpx;
+            }
+        }
+    }
+
+    .manage_money_all {
+        background: #fff url(/images/center/mange_bj.png) no-repeat;
+        background-size: cover;
+        width: auto;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 58rpx;
+        height: 178rpx;
+
+        .money_left {
+            flex: 1;
+            text-align: center;
+            position: relative;
+
+            .title {
+                font-family: PingFangSC-Regular;
+                font-size: 26rpx;
+                color: #ffffff;
+                display: block;
+                margin-bottom: 21rpx;
+            }
+
+            .num_mony {
+                font-family: DINAlternate-Bold;
+                font-size: 44rpx;
+                color: #ffffff;
+                line-height: 44rpx;
+
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 10rpx;
+                right: 0;
+                width: 1rpx;
+                height: 84rpx;
+                background: #fff;
+            }
+        }
+
+        .money_right {
+            flex: 1;
+            height: 84rpx;
+            margin-left: 80rpx;
+
+            .money_top {
+                .title {
+                    font-family: PingFangSC-Regular;
+                    font-size: 26rpx;
+                    color: #ffffff;
+                    vertical-align: 14rpx;
+                    line-height: 44rpx;
+                    display: inline-block;
+                }
+
+                .num_mony {
+                    font-family: DINAlternate-Bold;
+                    font-size: 44rpx;
+                    color: #ffffff;
+                    vertical-align: 6rpx;
+                    margin-left: 34rpx;
+                    line-height: 44rpx;
+                    display: inline-block;
+                }
+            }
+
+            .money_button {
+                margin-top: 15rpx;
+            }
+
+        }
+    }
+
+    .center-qrCode {
+        background: #fff; // margin-top: 30rpx;
+        padding-bottom: 30rpx;
+
+        .title {
+            font-family: PingFangSC-Regular;
+            font-size: 34rpx;
+            color: #171a25;
+            padding: 20rpx 0 10rpx;
+            display: block;
+            text-align: center;
+        }
+
+        .detail {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 30rpx;
+
+            .line {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 2rpx;
+                height: 84rpx;
+                background: #e3e4ea;
+                margin: -42rpx 0 0 -1rpx;
+            }
+
+            .detailflex {
+                flex: 1;
+                text-align: center;
+
+                .flex-title {
+                    font-family: PingFangSC-Regular;
+                    font-size: 28rpx;
+                    color: #858ea0;
+                    line-height: 40rpx;
+                }
+
+                .flex-detail {
+                    margin-top: 10rpx;
+
+                    .lable {
+                        font-family: DINAlternate-Bold;
+                        font-size: 56rpx;
+                        color: #171a25;
+                        line-height: 66rpx;
+                    }
+
+                    .unit {
+                        font-family: PingFangSC-Regular;
+                        font-size: 30rpx;
+                        color: #171a25;
+                        margin-left: 16rpx;
+                    }
+                }
+            }
+        }
+    }
+
+    .master_a {
+        background: #fff;
+        margin-top: 30rpx;
+        padding: 0 30rpx;
+
+        .list-item {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            line-height: 105rpx;
+            border-bottom: 2rpx solid #e3e4ea;
+            align-items: center;
+
+            .list-item-left {
+                .seticon {
+                    background: url(/images/center/set.png) no-repeat;
+                    background-size: cover;
+                    width: 34rpx;
+                    height: 33rpx;
+                    display: inline-block;
+                    margin-right: 20rpx;
+                    vertical-align: middle;
+                }
+
+                .seticon-z {
+                    background: url(/images/tuiguang-kuai.png) no-repeat;
+                    background-size: cover;
+                    width: 35rpx;
+                    height: 35rpx;
+                    display: inline-block;
+                    margin-right: 20rpx;
+                    vertical-align: middle;
+                }
+
+                .phoneicon {
+                    background: url(/images/center/setiphone.png) no-repeat;
+                    background-size: cover;
+                    width: 30rpx;
+                    height: 30rpx;
+                    display: inline-block;
+                    margin-right: 20rpx;
+                    vertical-align: -3rpx;
+                }
+
+                .text {
+                    font-family: PingFangSC-Regular;
+                    font-size: 32rpx;
+                    color: #171a25;
+                }
+            }
+
+            .list-item-right {
+                image {
+                    width: 12rpx;
+                    height: 22rpx;
+                }
+
+                .tel {
+                    font-family: PingFangSC-Regular;
+                    font-size: 30rpx;
+                    color: #858ea0;
+                }
+
+                .apply {
+                    font-family: PingFangSC-Regular;
+                    font-size: 32rpx;
+                    color: #858ea0;
+                    margin-right: 20rpx;
+                    display: inline-block;
+                }
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    .center-list {
+        background: #fff;
+        margin-top: 30rpx;
+        padding: 0 30rpx;
+
+        .list-item {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            line-height: 105rpx;
+            border-bottom: 2rpx solid #e3e4ea;
+            align-items: center;
+
+            .list-item-left {
+                .seticon {
+                    background: url(/images/center/set.png) no-repeat;
+                    background-size: cover;
+                    width: 34rpx;
+                    height: 33rpx;
+                    display: inline-block;
+                    margin-right: 20rpx;
+                    vertical-align: middle;
+                }
+
+                .seticon-z {
+                    background: url(/images/tuiguang-kuai.png) no-repeat;
+                    background-size: cover;
+                    width: 35rpx;
+                    height: 35rpx;
+                    display: inline-block;
+                    margin-right: 20rpx;
+                    vertical-align: middle;
+                }
+
+                .phoneicon {
+                    background: url(/images/center/setiphone.png) no-repeat;
+                    background-size: cover;
+                    width: 30rpx;
+                    height: 30rpx;
+                    display: inline-block;
+                    margin-right: 20rpx;
+                    vertical-align: -3rpx;
+                }
+
+                .text {
+                    font-family: PingFangSC-Regular;
+                    font-size: 32rpx;
+                    color: #171a25;
+                }
+            }
+
+            .list-item-right {
+                image {
+                    width: 12rpx;
+                    height: 22rpx;
+                }
+
+                .tel {
+                    font-family: PingFangSC-Regular;
+                    font-size: 30rpx;
+                    color: #858ea0;
+                }
+
+                .apply {
+                    font-family: PingFangSC-Regular;
+                    font-size: 32rpx;
+                    color: #858ea0;
+                    margin-right: 20rpx;
+                    display: inline-block;
+                }
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+}

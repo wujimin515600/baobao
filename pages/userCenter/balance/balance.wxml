@@ -1,0 +1,23 @@
+<view id="balance">
+    <block wx:if="{{balancelist.length&&balancelist.length>0}}">
+        <view class="balanceList" wx:for="{{balancelist}}" wx:key="{{index}}">
+            <view class="balanceName">
+                <text class="balance-name">{{transaction_type[item.transaction_type]}}</text>
+                <text class="balance-money">+{{filter.Format(item.amount)}}</text>
+            </view>
+            <view class="balanceTime">
+                <text class="balance-title">回收完成，已线下付款</text>
+                <text class="balance-time">{{filter.getDate(item.create_time*1000)}}</text>
+            </view>
+        </view>
+    </block>
+    <block wx:if="{{isHideLoadMore==true}}">
+        <view class="nodata">到底了</view>
+    </block>
+    <!-- <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+        <view class="weui-loading"></view>
+        <view class="weui-loadmore__tips">正在加载</view>
+    </view> -->
+</view>
+<wxs module="filter" src="../../../utils/dataFr.wxs"></wxs>
+<wxs module="filter" src="../../../utils/tofixed.wxs"></wxs>

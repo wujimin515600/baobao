@@ -1,0 +1,94 @@
+<view id="delivery">
+    <view class="delivery">
+        <block>
+            <view class="deliveryTop">
+                <view class="line"></view>
+                <view class="delivery-frequency">
+                    <view class="frequency">
+                        <text class="frequency-num">{{deliveryData.n_times}}</text>
+                        次
+                    </view>
+                    <view class="frequency-numall">累计投递</view>
+                </view>
+                <view class="delivery-money">
+                    <view class="money">
+                        <text class="moneynum">{{totalMoney}}</text>
+                        元
+                    </view>
+                    <view class="moneyall">累计赚取</view>
+                </view>
+            </view>
+        </block>
+        <block>
+            <view class="more-list">
+                <view class="moreDate" wx:if="{{choose&&moreData}}" animation='{{animationData}}'>
+                    <scroll-view scroll-y style='height:{{boxHeight}}rpx;' bindscrolltolower="lower" scroll-top="{{scrollTop}}">
+                        <view class="listData" wx:for="{{moreData}}" wx:key="{{index}}">
+                            <view class="moreName">
+                                <image src="{{item.icon}}" />
+                                {{item.t_name}}
+                            </view>
+                            <view class="moreKg">
+                                {{item.quantity}} {{item.unit==1?'个':item.unit==0?'公斤':''}}
+                            </view>
+                            <view class="moreMoney">
+                                <text>{{item.price}}</text>
+                                元
+                            </view>
+                        </view>
+                    </scroll-view>
+                </view>
+                <view class="deliveryMore" bindtap="{{ stopBtn ? 'unfolddown' : 'unfoldup' }}">
+                    {{zhebiType==false?'查看更多数据':'收起'}}
+                    <text class="{{choose==false?'downicon':'upicon'}}"></text>
+                </view>
+            </view>
+        </block>
+    </view>
+    <block>
+        <view class="deliveryList">
+            <view class="deliveryListItem" wx:for="{{listData}}" wx:key="{{item.id}}">
+                <view class="deliveryListDetail" bindtap="kindToggle" id="{{item.id}}">
+                    <view class="item-top">
+                        <view class="deliveryName">{{item.location}}</view>
+                        <view class="deliveryMoney">
+                            <text>{{filters.Format(item.amount)}}</text>
+                            元
+                            <view class="icon">
+                                <image src="/images/round-down.png"></image>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="deliveryTime">{{filter.getDate(item.create_time*1000)}}</view>
+                </view>
+                <block>
+                    <view class="nextlist  {{item.type==true ? 'kind-list-item-bd-show' : ''}}">
+                        <view class="nextlistDetail {{item.type==true ? 'navigator-box-show' : ''}}" wx:for="{{item.detail}}" wx:key="{{index}}" wx:for-item="items">
+                            <view class="title">{{items.t_name}}</view>
+                            <view class="num">
+                                <text>{{items.quantity}}</text>
+                                {{items.unit==0?'个':'公斤'}}
+                            </view>
+                            <view class="cash">
+                                <text>{{filters.Format(items.total_price)}}</text>
+                                元
+                            </view>
+                        </view>
+                        <view class="nextmoney">
+                            共收入
+                            <text>{{filters.Format(item.all_price)}}</text>
+                            <text>元</text>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </block>
+    <block>
+        <view class="nodata">到底了</view>
+    </block>
+    <!-- 遮蔽层 -->
+    <view class="zhebic" wx:if="{{zhebiType==true}}"></view>
+</view>
+<wxs module="filters" src="../../../utils/tofixed.wxs"></wxs>
+<wxs module="filter" src="../../../utils/dataFr.wxs"></wxs>

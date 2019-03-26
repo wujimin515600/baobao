@@ -1,0 +1,13 @@
+{
+    "navigationBarTitleText": "保保回收",
+    "component": true,
+    "usingComponents": {
+        "banner": "/pages/multiplex/banner/banner",
+        "site": "/pages/multiplex/site/site",
+        "tabbar": "/pages/multiplex/tabbarbox/tabbarbox"
+    },
+    "enablePullDownRefresh": true,
+    "onPullDownRefresh": true
+
+
+}

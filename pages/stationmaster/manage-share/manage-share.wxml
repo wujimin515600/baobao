@@ -1,0 +1,24 @@
+<loading hidden="{{loadingHidden}}">加载中...</loading>
+<canvas canvas-id="myCanvas">
+    <cover-view class="button" bindtap="save" wx:if="{{hasAuth}}">保存图片分享到朋友圈</cover-view>
+    <cover-view class="button" bindtap="getAuth" wx:else>获取保存到相册权限</cover-view>
+    <cover-view class="cover-bg" scroll-top="0" wx:if="{{shareVisable}}">
+        <cover-view class="layout-fixed-bottom">
+            <cover-view class="layout-ul">
+                <button class="layout-li" open-type="share">
+                    <cover-view class="row" scroll-top="0">
+                        <cover-image src="/images/icon-wx.png" class="icon-image"></cover-image>
+                    </cover-view>
+                    <cover-view class="row" scroll-top="0">微信</cover-view>
+                </button>
+                <cover-view class="layout-li" bindtap="closeShareDialog">
+                    <cover-view class="row" scroll-top="0">
+                        <cover-image src="/images/icon-share.png" class="icon-image"></cover-image>
+                    </cover-view>
+                    <cover-view class="row" scroll-top="0">朋友圈</cover-view>
+                </cover-view>
+            </cover-view>
+            <cover-view class="btn-cancel" bindtap="cancel">取消</cover-view>
+        </cover-view>
+    </cover-view>
+</canvas>

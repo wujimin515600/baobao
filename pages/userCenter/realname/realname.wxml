@@ -1,0 +1,16 @@
+<view id="realname">
+    <view class="realnameBox">
+        <view class="loginTel">
+            <text>登录手机号</text>
+            <text>188*****1234</text>
+        </view>
+        <view class="realnamebutton">
+            <text>实名认证</text>
+            <text>实名认证</text>
+        </view>
+        <view class="realnameId">
+            <text>身份证号码</text>
+            <text>420***********042</text>
+        </view>
+    </view>
+</view>

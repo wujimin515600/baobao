@@ -1,0 +1,110 @@
+#verifica {
+  padding: 0 30rpx;
+}
+
+#verifica .title {
+  margin: 96rpx 0 42rpx;
+  font-size: 48rpx;
+  font-family: PingFangSC-Medium;
+  color: #171A25;
+}
+
+#verifica .codeDiv {
+  display: flex;
+}
+
+#verifica .codeDiv .phone {
+  flex: 5;
+  font-family: PingFangSC-Regular;
+  font-size: 34rpx;
+  color: #171A25;
+}
+
+#verifica .buttonget {
+  font-size: 28rpx;
+  color: #858EA0;
+  flex: 2;
+  background: #fff;
+  text-align: right;
+}
+
+#verifica button[disabled] {
+  background: #fff;
+}
+
+#verifica .inputCode {
+  position: relative;
+}
+
+#verifica .inputCode .codes {
+  margin-top: 77rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#verifica .inputCode .iptbox {
+  font-size: 48rpx;
+  font-family: DINAlternate-Bold;
+  color: #000;
+  width: 140rpx;
+  margin-left: 44rpx;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10rpx;
+}
+
+#verifica .inputCode .ipt {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+
+#verifica .inputCode .placehol {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 9rpx;
+  left: 0;
+  color: #C9CDD7;
+  font-size: 34rpx;
+}
+
+#verifica .inputCode input:first-child {
+  margin-left: 0;
+}
+
+#verifica .goBack {
+  font-size: 26rpx;
+  color: #3D3C2F;
+  text-align: center;
+  margin-top: 48rpx;
+  display: block;
+}
+
+#verifica .nextlogin {
+  margin-top: 103rpx;
+  background: #F7F7F7;
+  border-radius: 48rpx;
+  font-size: 32rpx;
+  line-height: 96rpx;
+  font-family: PingFangSC-Regular;
+  color: #C9CDD7;
+}
+
+#verifica .nextloginactive {
+  margin-top: 103rpx;
+  background-image: linear-gradient(#298CFC, #2160F4);
+  border-radius: 48rpx;
+  font-size: 32rpx;
+  line-height: 96rpx;
+  font-family: PingFangSC-Regular;
+  color: #DEE6F3;
+}

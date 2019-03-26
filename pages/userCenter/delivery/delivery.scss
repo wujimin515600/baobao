@@ -1,0 +1,323 @@
+page {
+    background: #F7F7F7;
+}
+
+#delivery {
+    .delivery {
+        background: #fff;
+        position: relative;
+        min-height: 300rpx;
+        z-index: 3;
+
+        .deliveryTop {
+            display: flex;
+            position: relative;
+            padding-bottom: 42rpx;
+            border-bottom: 1px solid #E3E4EA;
+            padding-top: 40rpx;
+            margin: 0 30rpx;
+
+            .line {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 2rpx;
+                height: 84rpx;
+                background: #E3E4EA;
+                margin: -42rpx 0 0 -1rpx;
+
+            }
+
+            .delivery-frequency {
+                text-align: center;
+                flex: 1;
+
+                .frequency {
+                    font-size: 30rpx;
+                    color: #858EA0;
+                    font-family: PingFangSC-Regular;
+
+                    .frequency-num {
+                        font-family: DINAlternate-Bold;
+                        font-size: 70rpx;
+                        color: #171A25;
+                        line-height: 82rpx;
+                    }
+                }
+
+                .frequency-numall {
+                    font-family: PingFangSC-Regular;
+                    font-size: 28rpx;
+                    color: #858EA0;
+
+                }
+            }
+
+            .delivery-money {
+                flex: 1;
+                text-align: center;
+
+                .money {
+
+                    font-family: PingFangSC-Regular;
+                    font-size: 30rpx;
+                    color: #858EA0;
+
+                    .moneynum {
+                        font-family: DINAlternate-Bold;
+                        font-size: 70rpx;
+                        color: #171A25;
+                    }
+                }
+
+                .moneyall {
+                    font-family: PingFangSC-Regular;
+                    font-size: 28rpx;
+                    color: #858EA0;
+                }
+
+
+            }
+        }
+
+        .more-list {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 206rpx;
+            background: #fff;
+            z-index: 2;
+
+            .moreDate {
+                background: #fff;
+                padding: 0 30rpx;
+
+                .listData {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    margin-top: 30rpx;
+                    align-items: center;
+
+                    .moreName {
+                        font-family: PingFangSC-Regular;
+                        font-size: 26rpx;
+                        color: #3A4159;
+
+                        image {
+                            width: 70rpx;
+                            height: 80rpx;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    .moreKg {
+                        font-family: DINAlternate-Bold;
+                        font-size: 30rpx;
+                        color: #3A4159;
+                    }
+
+                    .moreMoney {
+                        font-family: PingFangSC-Medium;
+                        font-size: 26rpx;
+                        color: #3A4159;
+
+                        text {
+                            font-family: DINAlternate-Bold;
+                            font-size: 30rpx;
+                            color: #3A4159;
+                            line-height: 40rpx;
+                        }
+                    }
+                }
+
+            }
+
+            .deliveryMore {
+                font-family: PingFangSC-Regular;
+                font-size: 26rpx;
+                color: #858EA0;
+                line-height: 97rpx;
+                background: #fff;
+                text-align: center;
+
+                .downicon {
+                    background: url(../../../images/downicon.png) no-repeat;
+                    width: 17.6rpx;
+                    height: 9.9rpx;
+                    vertical-align: middle;
+                    display: inline-block;
+                    background-size: cover;
+                }
+
+                .upicon {
+                    background: url(../../../images/upicon.png) no-repeat;
+                    width: 17.6rpx;
+                    height: 9.9rpx;
+                    vertical-align: middle;
+                    display: inline-block;
+                    background-size: cover;
+                }
+            }
+        }
+
+
+    }
+
+    .deliveryList {
+        .deliveryListItem {
+            background: #fff;
+            margin-top: 30rpx;
+
+            .deliveryListDetail {
+                padding: 30rpx;
+
+                .item-top {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+
+                    .deliveryName {
+                        font-family: PingFangSC-Regular;
+                        font-size: 32rpx;
+                        color: #3A4159;
+                        line-height: 42rpx;
+                        font-weight: 500;
+
+                    }
+
+                    .deliveryMoney {
+                        font-family: PingFangSC-Medium;
+                        font-size: 30rpx;
+                        color: #3A4159;
+
+
+                        text {
+                            font-family: DINAlternate-Bold;
+                            font-size: 36rpx;
+                            color: #3A4159;
+                        }
+                    }
+
+                    .icon {
+                        display: inline-block;
+                        margin-left: 28rpx;
+
+                        image {
+                            width: 32rpx;
+                            height: 32rpx;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+
+            }
+
+            .deliveryTime {
+                font-family: PingFangSC-Light;
+                font-size: 28rpx;
+                color: #858EA0;
+            }
+        }
+    }
+
+    .nextlist {
+        padding: 0 30rpx;
+        height: 0;
+        overflow: hidden;
+
+        .nextlistDetail {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            border-top: 2rpx solid #E3E4EA;
+            border-bottom: 2rpx solid #E3E4EA;
+            padding: 32rpx 0;
+            opacity: 0;
+            position: relative;
+            transform: translateY(-50%);
+            transition: 0.3s;
+
+            .title {
+                font-family: PingFangSC-Regular;
+                font-size: 26rpx;
+                color: #858EA0;
+            }
+
+            .num {
+                font-family: PingFangSC-Regular;
+                font-size: 24rpx;
+                color: #858EA0;
+
+                text {
+                    font-family: DINAlternate-Bold;
+                    font-size: 28rpx;
+                    color: #858EA0;
+                }
+            }
+
+            .cash {
+                font-family: PingFangSC-Medium;
+                font-size: 24rpx;
+                color: #2576F8;
+                margin-right: 16px;
+
+                text {
+                    font-family: DINAlternate-Bold;
+                    font-size: 28rpx;
+                    color: #2576F8;
+                }
+            }
+        }
+
+        .navigator-box-show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .nextmoney {
+            text-align: right;
+            font-family: PingFangSC-Regular;
+            font-size: 26rpx;
+            color: #3A4159;
+            padding: 30rpx 0;
+            margin-right: 16px;
+
+            text {
+                font-family: DINAlternate-Bold;
+                font-size: 28rpx;
+                color: #2576F8;
+
+                &:last-child {
+                    font-family: DINAlternate-Bold;
+                    font-size: 24rpx;
+                    color: #2576F8;
+                }
+            }
+
+
+        }
+    }
+
+    .kind-list-item-bd-show {
+        height: auto;
+    }
+
+    .nodata {
+        font-family: PingFangSC-Regular;
+        font-size: 28rpx;
+        color: #858EA0;
+        text-align: center;
+        margin-top: 30rpx;
+    }
+
+    .zhebic {
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}

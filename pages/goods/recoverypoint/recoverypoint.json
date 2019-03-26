@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "附近回收点",
+    "usingComponents": {
+        "site": "/pages/multiplex/site/site"
+    }
+}

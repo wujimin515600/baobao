@@ -1,0 +1,35 @@
+page {
+  background: #fff;
+}
+
+#realname .realnameBox {
+  margin-top: 53rpx;
+  padding: 0 30rpx;
+}
+
+#realname .realnameBox text {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #171A25;
+}
+
+#realname .realnameBox .loginTel {
+  line-height: 105rpx;
+  border-bottom: 2rpx solid #E3E4EA;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#realname .realnameBox .realnamebutton,
+#realname .realnameBox .realnameId {
+  border-bottom: 2rpx solid #E3E4EA;
+  line-height: 105rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#realname .realnameBox .realnameId {
+  border-bottom: none;
+}

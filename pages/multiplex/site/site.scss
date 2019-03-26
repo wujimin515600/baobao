@@ -1,0 +1,237 @@
+.nodatas {
+    text-align: center;
+    font-size: 28rpx;
+    margin-top: 40rpx;
+}
+
+.listChild {
+    background: #FFFFFF;
+    box-shadow: 0 3rpx 23rpx 1rpx rgba(77, 77, 77, 0.10);
+    border-radius: 8rpx;
+    padding: 30rpx;
+    margin-top: 20rpx;
+
+    .listChild-title {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .firstbox {
+            display: flex;
+            align-items: center;
+
+            .address {
+                display: flex;
+                align-items: center;
+
+                text {
+                    font-family: PingFangSC-Medium;
+                    font-size: 30rpx;
+                    color: #171A25;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: 230rpx;
+                    display: inline-block;
+                    vertical-align: -12rpx;
+                    font-weight: bold;
+                }
+
+                .mapicon {
+                    width: 24rpx;
+                    height: 30rpx;
+                    margin-right: 16rpx;
+                }
+
+            }
+
+            .peoplename {
+                display: flex;
+                //margin-left: 45rpx;
+                align-items: center;
+
+                text {
+                    font-family: PingFangSC-Regular;
+                    font-size: 28rpx;
+                    color: #858EA0;
+                    width: 100rpx;
+                    display: inline-block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                .peopleicon {
+                    width: 25rpx;
+                    height: 27rpx;
+                    margin-right: 12rpx;
+                }
+            }
+        }
+
+        .kmbox {
+            text {
+                font-family: PingFangSC-Medium;
+                font-size: 30rpx;
+                color: #171A25;
+            }
+        }
+
+
+    }
+
+    .listChild-flex {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6rpx;
+        position: relative;
+
+        .childlabel {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 88%;
+
+            .childlabel-list {
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 22rpx 0 0 33rpx;
+                flex: auto;
+                width: 47%;
+                // justify-content: space-around;
+
+
+                image {
+                    width: 81rpx;
+                    height: 81rpx;
+                    margin-right: 12rpx;
+                }
+
+                .text {
+                    .text-name {
+                        font-family: PingFangSC-Regular;
+                        font-size: 24rpx;
+                        color: #3A4159;
+                        display: block;
+                        line-height: 24rpx;
+                        margin-top: 8rpx;
+                    }
+
+                    .text-weight {
+                        display: block;
+                        line-height: 24rpx;
+                        margin-top: 10rpx;
+
+                        .num {
+                            font-family: PingFangSC-Medium;
+                            font-size: 24rpx;
+                            color: #171A25;
+
+                            .kg {
+                                font-family: PingFangSC-Medium;
+                                font-size: 22rpx;
+                                color: #0B0013;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(2n+1) {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .childmore {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            // position: absolute;
+            // top: 50%;
+            // right: 0;
+            // transform: translate(-50%, -50%);
+
+            text {
+                font-family: PingFangSC-Regular;
+                font-size: 26rpx;
+                color: #858EA0;
+                //margin-right: 13rpx;
+            }
+
+            .moreicon {
+                width: 12rpx;
+                height: 23rpx;
+            }
+        }
+    }
+}
+
+.seekFailed {
+    .seek {
+        width: 146rpx;
+        height: 207rpx;
+        display: block;
+        margin: 40rpx auto 0;
+    }
+
+    .seek-title {
+        font-family: PingFangSC-Regular;
+        font-size: 30rpx;
+        color: #858EA0;
+        text-align: center;
+        margin-top: 17rpx;
+    }
+
+    .twoButton {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin: 50rpx 50rpx 0;
+
+        view {
+            width: 241rpx;
+            height: 69rpx;
+            font-size: 32rpx;
+            border-radius: 48rpx;
+            font-family: PingFangSC-Regular;
+            text-align: center;
+            line-height: 69rpx;
+        }
+
+        .refresh {
+            border: 2rpx solid #2576F8;
+            color: #2576F8;
+            margin: 0 auto;
+
+            .refreshicon {
+                background: url(/images/refresh.png) no-repeat;
+                background-size: cover;
+                width: 25rpx;
+                height: 25rpx;
+                display: inline-block;
+                vertical-align: -3rpx;
+                margin-right: 14rpx;
+            }
+        }
+
+        .phone {
+            background: linear-gradient(-90deg, #215FF4 0%, #298CFC 100%);
+            color: #FFFFFF;
+            margin-left: 65rpx;
+
+            .phoneicon {
+                background: url(/images/phone.png) no-repeat;
+                background-size: cover;
+                width: 25rpx;
+                height: 25rpx;
+                display: inline-block;
+                vertical-align: -3rpx;
+                margin-right: 14rpx;
+            }
+        }
+    }
+}
