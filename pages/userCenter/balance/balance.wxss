@@ -1,0 +1,57 @@
+#balance {
+  border-top: 2rpx solid #E3E4EA;
+  height: 1500rpx;
+}
+
+#balance .balanceList {
+  padding: 0 30rpx;
+  border-bottom: 2rpx solid #E3E4EA;
+}
+
+#balance .balanceList .balanceName {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+
+#balance .balanceList .balanceName .balance-name {
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #171A25;
+}
+
+#balance .balanceList .balanceName .balance-money {
+  font-family: DINAlternate-Bold;
+  font-size: 32rpx;
+  color: #2576F8;
+}
+
+#balance .balanceList .balanceTime {
+  margin-top: 5rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#balance .balanceList .balanceTime .balance-title {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #858EA0;
+  line-height: 37rpx;
+}
+
+#balance .balanceList .balanceTime .balance-time {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #858EA0;
+}
+
+#balance .nodata {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #858EA0;
+  text-align: center;
+  margin-top: 30rpx;
+}

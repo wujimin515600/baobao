@@ -1,0 +1,220 @@
+.nodatas {
+  text-align: center;
+  font-size: 28rpx;
+  margin-top: 40rpx;
+}
+
+.listChild {
+  background: #FFFFFF;
+  box-shadow: 0 3rpx 23rpx 1rpx rgba(77, 77, 77, 0.1);
+  border-radius: 8rpx;
+  padding: 30rpx;
+  margin-top: 20rpx;
+}
+
+.listChild .listChild-title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listChild .listChild-title .firstbox {
+  display: flex;
+  align-items: center;
+}
+
+.listChild .listChild-title .firstbox .address {
+  display: flex;
+  align-items: center;
+}
+
+.listChild .listChild-title .firstbox .address text {
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #171A25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 230rpx;
+  display: inline-block;
+  vertical-align: -12rpx;
+  font-weight: bold;
+}
+
+.listChild .listChild-title .firstbox .address .mapicon {
+  width: 24rpx;
+  height: 30rpx;
+  margin-right: 16rpx;
+}
+
+.listChild .listChild-title .firstbox .peoplename {
+  display: flex;
+  align-items: center;
+}
+
+.listChild .listChild-title .firstbox .peoplename text {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #858EA0;
+  width: 100rpx;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listChild .listChild-title .firstbox .peoplename .peopleicon {
+  width: 25rpx;
+  height: 27rpx;
+  margin-right: 12rpx;
+}
+
+.listChild .listChild-title .kmbox text {
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #171A25;
+}
+
+.listChild .listChild-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rpx;
+  position: relative;
+}
+
+.listChild .listChild-flex .childlabel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 88%;
+}
+
+.listChild .listChild-flex .childlabel .childlabel-list {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 22rpx 0 0 33rpx;
+  flex: auto;
+  width: 47%;
+}
+
+.listChild .listChild-flex .childlabel .childlabel-list image {
+  width: 81rpx;
+  height: 81rpx;
+  margin-right: 12rpx;
+}
+
+.listChild .listChild-flex .childlabel .childlabel-list .text .text-name {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #3A4159;
+  display: block;
+  line-height: 24rpx;
+  margin-top: 8rpx;
+}
+
+.listChild .listChild-flex .childlabel .childlabel-list .text .text-weight {
+  display: block;
+  line-height: 24rpx;
+  margin-top: 10rpx;
+}
+
+.listChild .listChild-flex .childlabel .childlabel-list .text .text-weight .num {
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #171A25;
+}
+
+.listChild .listChild-flex .childlabel .childlabel-list .text .text-weight .num .kg {
+  font-family: PingFangSC-Medium;
+  font-size: 22rpx;
+  color: #0B0013;
+}
+
+.listChild .listChild-flex .childlabel .childlabel-list:nth-child(2n+1) {
+  margin-left: 0;
+}
+
+.listChild .listChild-flex .childmore {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listChild .listChild-flex .childmore text {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #858EA0;
+}
+
+.listChild .listChild-flex .childmore .moreicon {
+  width: 12rpx;
+  height: 23rpx;
+}
+
+.seekFailed .seek {
+  width: 146rpx;
+  height: 207rpx;
+  display: block;
+  margin: 40rpx auto 0;
+}
+
+.seekFailed .seek-title {
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #858EA0;
+  text-align: center;
+  margin-top: 17rpx;
+}
+
+.seekFailed .twoButton {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 50rpx 50rpx 0;
+}
+
+.seekFailed .twoButton view {
+  width: 241rpx;
+  height: 69rpx;
+  font-size: 32rpx;
+  border-radius: 48rpx;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  line-height: 69rpx;
+}
+
+.seekFailed .twoButton .refresh {
+  border: 2rpx solid #2576F8;
+  color: #2576F8;
+  margin: 0 auto;
+}
+
+.seekFailed .twoButton .refresh .refreshicon {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAv1JREFUSA2tVk1IVFEUPuf6ZqZoVxBlEJLoSEEk5SKiqFyIFdS2ZblvmY5tJrC0okUugoLa5rIgrDYWtAissEWBo4lWOEVgBAXTvOfc03fu9B6jM47pzIX37rvnnvN9997zcx9TldY9LImZ+fxxJjotxAeIpFGENzPJN2L6BNMMc8PI5KD3nJllJSjYl7ejafGyf4LzJDYtQtvLNZZKADJLbG5mhmK3S8kEK9JxGcmeXtnpk/+QRNpDKCbOsOFnQnaOrPnBRrZZK02QHxOSZKTHNBajxLkP1/hzMo1d5/LjRPxyCUlrn98h1j6G0VY1BMioeHxp+mr8XQi0vE+mgkOwSWHVJ50N8wJ2f5gN7RUrI04WGrkdSP41xiDgHBnqmR5KPAjnV+uTF/0e7OoWnk3Q/YIVDpPQDbVzO1EfzOf88eIRca6hwXRODsZerQa8fL61P+ikgh3FruLwha+96hh9zeeCnsgH2MF6CFp6gyNcsBoketyAKxLoN/8L01mNIvXB1PWEO1ud/N/W1ht0FaTwtLI+i9E8CMNUnVxZsbrUi3kfXRgTF7Du6MGiA8Ny18MkEk2dw5mpKlFUjeb9AM9gftdKOqaYySBBHqykVKvc01KhIC7RakUrsd9/R2K/Zv3LiKy3IOEtSkFiFkp0av78PZfvFkupAvFPEEkRnC3I6tcQTM2KhtKVAwln3YBMk/b1ahzhcdagbL9RYNSZrnoRlOIpPqKLHjkhqmlLv7+vHkS7+/z2sDorvmnekRhjpq8KzotypR4ki1YGHB5wFd88ucB5JElahWA/0dKXP6vf621qrzjOHriKD8cTNW6I3UcYTLgJS/faUsFB973Gl7ODvTMDnsPFILq0ar1P3Ak4AtkI3O9xTnToDamEEYkO1nMzarCoL6MjAgEbc2pqKK4XoGtLSFSy6h2vlQGJq3mgYR9GURGNJ+IUPxPuwMnwKiPRiTX/rWh0wsnqgxdpXgzBw74iSThZ6b8L69Jah1LEWU00zQMNUxeloeGy/i+yNmpr8rycoQAAAABJRU5ErkJggg==) no-repeat;
+  background-size: cover;
+  width: 25rpx;
+  height: 25rpx;
+  display: inline-block;
+  vertical-align: -3rpx;
+  margin-right: 14rpx;
+}
+
+.seekFailed .twoButton .phone {
+  background: linear-gradient(-90deg, #215FF4 0%, #298CFC 100%);
+  color: #FFFFFF;
+  margin-left: 65rpx;
+}
+
+.seekFailed .twoButton .phone .phoneicon {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAAAXNSR0IArs4c6QAAAnZJREFUSA2tlstr1UAUxhsRi1YQ3IgttAilRaFIiwoWRUTUlSCCCIIrXbjQv8AHbnThxk1XFUQoggtBUATRIlYX7U5BakVQUHy/UIsUX42/L0zqZO65ye1lDvw6cybnfF96k0zS0hIh0jQdgx/wDm7DMWiPIG1LIH4C7sBD+A2KXzAEbWYXB3rhFnyH69BpFlYs0tcGB2ASFE+hq9DGwgB8AT+ekzT0s1DXAWfgCGyROOMiOAeKZ7AiM2XSDR/BirssJoWzMxJq9gbN98j7VMp41h27krWSXHML9YZDhkfNEs36L7fDCMzCB+iEhfAAFBt1Bp+yaf0/UzXqwQKtx+ES7IcE9NMqRlXKuC/L0nRYybRLyobWwKOQ0njTax5yJo9Y+wPLYAn8hUkZTkFZjBfU6yQI9MBrJ7SS8bSbr3Mn8IT8mwwvuAPWoId5fR2PmmVqD8Jb0LVrhYG8iHk/7JBheIexNBc784ZoI9KL4fOcxf/Jq2gmntCCJElmyM97a/lUt3lPnkQdEW4HXa8wrkY18sVwOhm6ufywXxdtjriu5QvDdIa17NaOZpYLIbwV9ICGoW2qO6+LOiKsXd8K7fgdUc0khqg22/uWI2syLb7bYpwBostBW5EVus5rLB/W9fLVRj1oHS9do2kV6BvFCn0V7PYFyDfBG694gvlqv6ZyTsNaeO+J+NNZkouwAfaA9dbRs72r0sgvoEFvgZfQbPykcbOvWTmnQbv/42Yd6ZuoNAkLaFoKl5s0nQ71Gs4xPArWvlt2LjcaNrAKUe4Cfbs2El8p6rV05r2G0DYYLXHV4zP/Z7LqTBDtg1MwDvrGldEY9Ie9/wB2czK6VzKAEgAAAABJRU5ErkJggg==) no-repeat;
+  background-size: cover;
+  width: 25rpx;
+  height: 25rpx;
+  display: inline-block;
+  vertical-align: -3rpx;
+  margin-right: 14rpx;
+}

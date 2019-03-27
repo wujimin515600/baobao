@@ -1,0 +1,89 @@
+.tabBarbox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0 3px 23px 1px rgba(77, 77, 77, 0.14);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 130rpx;
+    z-index: 1;
+
+    .tabBar-item {
+        flex: 1;
+        text-align: center;
+        font-family: PingFangSC-Regular;
+        font-size: 24rpx;
+        color: #858EA0;
+
+        &:nth-child(2) {
+            margin-top: -50rpx;
+            background: #fff;
+            width: 178rpx;
+            height: 178rpx;
+            border-radius: 50% 50% 0 0;
+            color: #fff;
+            flex: none;
+
+            .navigator {
+                width: 158rpx;
+                height: 158rpx;
+                border-radius: 50%;
+                background: linear-gradient(-180deg, #298CFC 0%, #2160F4 100%);
+                margin: 14rpx auto 0;
+                font-size: 28rpx;
+                color: #fff;
+                opacity: 1;
+            }
+
+            .tabBartext {
+                color: #fff;
+            }
+
+        }
+
+        &:first-child {
+            margin-left: 99rpx;
+            margin-right: 95rpx;
+
+        }
+
+        &:last-child {
+            margin-right: 99rpx;
+            margin-left: 85rpx;
+
+            image {
+                width: 39rpx;
+                height: 44rpx;
+
+            }
+        }
+
+        .tabBartext {
+            font-family: PingFangSC-Regular;
+            font-size: 24rpx;
+            color: #858EA0;
+        }
+
+        .icon {
+            width: 43rpx;
+            height: 43rpx;
+            margin-top: 20rpx;
+        }
+
+        &:nth-child(2) {
+            .tabBartext {
+                font-family: PingFangSC-Regular;
+                font-size: 28rpx;
+                color: #fff;
+            }
+
+            .icon {
+                width: 67rpx;
+                height: 63rpx;
+                margin-top: 23rpx;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/logs/logs",
+    "pages/user/register/register",
+    "pages/user/verificationCode/verificationCode",
+    "pages/order/goodsfinish/goodsfinish",
+    "pages/userCenter/center/center",
+    "pages/userCenter/balance/balance",
+    "pages/userCenter/delivery/delivery",
+    "pages/userCenter/information/information",
+    "pages/userCenter/realname/realname",
+    "pages/userCenter/set/set",
+    "pages/goods/recoverypoint/recoverypoint",
+    "pages/goods/recoverypointDetail/recoverypointDetail",
+    "pages/order/orderindex/orderindex",
+    "pages/order/receivingAddress/receivingAddress",
+    "pages/user/activeregister/activeregister",
+    "pages/out/out",
+    "pages/stationmaster/apply/apply",
+    "pages/stationmaster/manage/manage",
+    "pages/stationmaster/manage-share/manage-share",
+    "pages/stationmaster/manage-qrcode/manage-qrcode",
+    "pages/stationmaster/pool-summary/pool-summary",
+    "pages/stationmaster/summary-detail/summary-detail",
+    "pages/realPrice/realPrice",
+    "pages/recovery/recovery",
+    "pages/agreement/agreement",
+    "pages/ACT-invite/ACT-invite",
+    "pages/userCenter/myPoints/myPoints",
+    "pages/userCenter/points-detail/points-detail",
+    "pages/userCenter/applyResult/applyResult"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "保保回收",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f7f7f7"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于小程序定位地理位置"
+    }
+  }
+}

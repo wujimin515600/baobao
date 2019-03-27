@@ -1,0 +1,41 @@
+<view id="pool-summary">
+    <!-- 搜索 -->
+    <block>
+        <view class="serach">
+            <input type="text" placeholder="搜索手机号码/姓名" confirm-type='search' bindconfirm='query' value="{{inputValue}}" bindinput="serach_input" />
+        </view>
+    </block>
+    <!-- 搜索结果 -->
+    <block>
+        <view class="serach_list">
+            <block wx:if="{{list.length>0}}">
+                <view class="list_detail" wx:for="{{list}}" wx:key="index" bindtap="go_detail" data-client="{{item.client}}" data-pn="{{item.pn}}" data-name="{{item.name}}">
+                    <view class="detail_title">
+                        <view class="info">
+                            <text class="phone">{{item.pn}}</text>
+                            <text class="name" wx:if="{{item.name}}">{{item.name}}</text>
+                        </view>
+                        <view class="money">
+                            <view class="text">提成共</view>
+                            <view class="money_num">
+                                {{item.total_promotion?filter.Format(item.total_promotion):'0.00'}}
+                            </view>
+                        </view>
+                    </view>
+                    <view class="detail_time">
+                        <text class="times">
+                            注册时间：{{filter_time.getDate(item.registered_date*1000)}}
+                        </text>
+                        <image src="/images/righticon.png"></image>
+                    </view>
+                </view>
+            </block>
+            <block wx:else>
+                <view class="no_data">暂无数据</view>
+            </block>
+        </view>
+        <view class="bitter_end" wx:if="{{isHideLoadMore==true}}">到底啦～</view>
+    </block>
+</view>
+<wxs module="filter_time" src="../../../utils/dataFr.wxs"></wxs>
+<wxs module="filter" src="../../../utils/tofixed.wxs"></wxs>

@@ -1,0 +1,160 @@
+page {
+    background: #fafafa;
+}
+
+#stationmaster-manage {
+
+    .manage_money {
+        background: #fff;
+        padding-bottom: 30rpx;
+
+        .manage_money_all {
+            background: url(/images/center/mange_bj.png) no-repeat;
+            background-size: cover;
+            width: auto;
+            display: flex;
+            margin: 0 auto;
+            padding-top: 58rpx;
+            height: 178rpx;
+
+            .money_left {
+                flex: 1;
+
+                text-align: center;
+                position: relative;
+
+                .title {
+                    font-family: PingFangSC-Regular;
+                    font-size: 26rpx;
+                    color: #FFFFFF;
+                    display: block;
+                    margin-bottom: 21rpx;
+                }
+
+                .num_mony {
+                    font-family: DINAlternate-Bold;
+                    font-size: 44rpx;
+                    color: #FFFFFF;
+                    line-height: 44rpx;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 10rpx;
+                    right: 0;
+                    width: 1rpx;
+                    height: 84rpx;
+                    background: #fff;
+                }
+            }
+
+            .money_right {
+                flex: 1;
+                height: 84rpx;
+                margin-left: 80rpx;
+
+                .money_top {
+                    line-height: 44rpx;
+
+                    .title {
+                        font-family: PingFangSC-Regular;
+                        font-size: 26rpx;
+                        color: #FFFFFF;
+                        vertical-align: 14rpx;
+                        display: inline-block;
+                        line-height: 26rpx;
+                    }
+
+                    .num_mony {
+                        font-family: DINAlternate-Bold;
+                        font-size: 44rpx;
+                        color: #FFFFFF;
+                        vertical-align: 6rpx;
+                        margin-left: 34rpx;
+                        display: inline-block;
+                        line-height: 44rpx;
+                    }
+                }
+
+                .money_button {
+                    margin-top: 15rpx;
+                }
+
+            }
+        }
+
+        .share {
+            background: #2577F8;
+            border-radius: 12rpx;
+            width: 690rpx;
+            height: 82rpx;
+            line-height: 82rpx;
+            display: block;
+            margin: 0 auto;
+            font-family: PingFangSC-Regular;
+            font-size: 32rpx;
+            color: #fff;
+
+            .share_icon {
+                background: url(/images/shr_icon.png) no-repeat;
+                background-size: cover;
+                width: 28rpx;
+                height: 26rpx;
+                display: inline-block;
+                margin-right: 20rpx;
+                vertical-align: middle;
+            }
+        }
+
+        .spread {
+            background: #FFFFFF;
+            border: 1px solid #2577F8;
+            border-radius: 12rpx;
+            width: 690rpx;
+            height: 82rpx;
+            line-height: 82rpx;
+            display: block;
+            margin: 40rpx auto 0;
+            font-family: PingFangSC-Regular;
+            font-size: 32rpx;
+            color: #2577F8;
+
+            .spread_icon {
+                background: url(/images/tuiguan.png) no-repeat;
+                background-size: cover;
+                width: 26rpx;
+                height: 26rpx;
+                display: inline-block;
+                margin-right: 20rpx;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .friendship_tips {
+        font-size: 28rpx;
+        color: #3A4159;
+        margin: 40rpx 37rpx 0;
+
+        .title {
+            margin-bottom: 18rpx;
+            display: block;
+        }
+
+        .guide_detail {
+            display: flex;
+
+            text {
+                font-size: 24rpx;
+                color: #3A4159;
+                line-height: 40rpx;
+                display: block;
+            }
+
+            .num {
+                margin-right: 10rpx;
+            }
+        }
+    }
+}

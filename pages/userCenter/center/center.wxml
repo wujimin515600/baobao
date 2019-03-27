@@ -1,0 +1,85 @@
+<view id="center">
+    <!-- 个人中心顶部 -->
+    <view class="center-top">
+        <view class="phoneNumber">{{phone}}</view>
+        <view class="peopleImg" bindtap="clickInfor">
+            <image src="/images/center/user.png"></image>
+            <text class="centericon"></text>
+        </view>
+    </view>
+    <block>
+        <view class="manage_money_all">
+            <view class="money_left" bindtap="hrefMyPoints">
+                <text class="title">当前保保金</text>
+                <view class="num_mony">{{filter.Format(balance)}}</view>
+            </view>
+            <view class="money_right" bindtap="deliveryClcik">
+                <view class="toudi money_top">
+                    <text class="title">投递次数</text>
+                    <view class="num_mony">{{deliveryNum}}</view>
+                </view>
+                <view class="money_top  money_button">
+                    <text class="title">累计收益</text>
+                    <view class="num_mony">{{filter.Format(total_amount)}}</view>
+                </view>
+            </view>
+        </view>
+    </block>
+    <!-- 二维码 -->
+    <block>
+        <view class="center-qrCode">
+            <text class="title">收款二维码</text>
+            <block>
+                <qrcode />
+            </block>
+        </view>
+    </block>
+    <block>
+        <view class="master_a">
+            <view class="list-item" bindtap="apply" wx:if="{{stationmaster_type==1}}">
+                <view class="list-item-left">
+                    <text class="seticon-z"></text>
+                    <text class="text">站长推广</text>
+                </view>
+                <view class="list-item-right">
+                    <text class="apply">点击申请</text>
+                    <image src="/images/righticon.png"></image>
+                </view>
+            </view>
+            <view class="list-item" bindtap="turnover" wx:else>
+                <view class="list-item-left">
+                    <text class="seticon-z"></text>
+                    <text class="text">站长推广</text>
+                </view>
+                <view class="list-item-right">
+                    <text class="apply">{{matserStu==0?'申请中':matserStu==2?'申请不通过':'查看营业额'}}</text>
+                    <image src="/images/righticon.png" wx:if="{{matserStu==1}}"></image>
+                </view>
+            </view>
+        </view>
+    </block>
+    <!-- 设置 -->
+    <view class="center-list">
+        <block>
+            <view class="list-item" bindtap="hrefSet">
+                <view class="list-item-left">
+                    <text class="seticon"></text>
+                    <text class="text">设置</text>
+                </view>
+                <view class="list-item-right">
+                    <image src="/images/righticon.png"></image>
+                </view>
+            </view>
+            <view class="list-item" bindtap="call">
+                <view class="list-item-left">
+                    <text class="phoneicon"></text>
+                    <text class="text">客服电话</text>
+                </view>
+                <view class="list-item-right">
+                    <text class="tel">0411-62623999</text>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
+<wxs module="filter" src="../../../utils/tofixed.wxs"></wxs>

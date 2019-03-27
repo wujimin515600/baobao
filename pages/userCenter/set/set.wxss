@@ -1,0 +1,12 @@
+#loginOut {
+  background-image: linear-gradient(-90deg, #215FF4 0%, #298CFC 100%);
+  border-radius: 48rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 36rpx;
+  color: #F4F4F2;
+  display: block;
+  width: 595rpx;
+  height: 96rpx;
+  line-height: 96rpx;
+  margin: 80rpx auto 0;
+}

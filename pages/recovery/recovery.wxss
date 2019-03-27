@@ -1,0 +1,484 @@
+page {
+  background: #f7f7f7;
+}
+
+#recovery .recovery_top {
+  background: #fff;
+}
+
+#recovery .recovery_top .recovery_address {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E3E4EA;
+  margin: 0 30rpx;
+  line-height: 113rpx;
+  height: 113rpx;
+}
+
+#recovery .recovery_top .recovery_address image {
+  width: 24rpx;
+  height: 30rpx;
+}
+
+#recovery .recovery_top .recovery_address .orderAdress {
+  margin-left: 26rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 700rpx;
+  align-items: center;
+}
+
+#recovery .recovery_top .recovery_address .orderAdress .orderAdress-left .adress {
+  font-size: 34rpx;
+  color: #171A25;
+  line-height: 34rpx;
+  width: 520rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#recovery .recovery_top .recovery_address .orderAdress .orderAdress-left .adressname {
+  font-size: 26rpx;
+  color: #3A4159;
+  line-height: 32rpx;
+  margin-top: 10rpx;
+  display: flex;
+}
+
+#recovery .recovery_top .recovery_address .orderAdress .orderAdress-left .adressname .tel {
+  margin-left: 20rpx;
+}
+
+#recovery .recovery_top .recovery_address .orderAdress .orderAdress-left .adress_texg {
+  font-size: 32rpx;
+  color: #3A4159;
+}
+
+#recovery .recovery_top .recovery_address .orderAdress .orderAdress-right image {
+  width: 33rpx;
+  height: 34rpx;
+}
+
+#recovery .recovery_top .recovery_times {
+  display: flex;
+  align-items: center;
+  margin: 0 30rpx;
+  line-height: 113rpx;
+  height: 113rpx;
+  justify-content: space-between;
+}
+
+#recovery .recovery_top .recovery_times .select_text {
+  display: flex;
+  align-items: center;
+  flex: none;
+  width: 200rpx;
+}
+
+#recovery .recovery_top .recovery_times .select_text image {
+  width: 26rpx;
+  height: 26rpx;
+  margin-right: 26rpx;
+}
+
+#recovery .recovery_top .recovery_times .select_text .text {
+  font-size: 32rpx;
+  color: #3A4159;
+}
+
+#recovery .recovery_top .recovery_times picker {
+  text-align: right;
+  flex: 1;
+}
+
+#recovery .recovery_top .recovery_times .select_time {
+  text-align: right;
+  font-size: 28rpx;
+  position: relative;
+  padding-right: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#recovery .recovery_top .recovery_times .select_time image {
+  position: absolute;
+  right: 8rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 12rpx;
+  height: 12rpx;
+}
+
+#recovery .recovery_top .recovery_times .select_time .time_text {
+  font-size: 27rpx;
+  color: #3A4159;
+}
+
+#recovery .recovery_main {
+  margin-top: 30rpx;
+  background: white;
+  padding: 0 30rpx 120rpx;
+}
+
+#recovery .recovery_main .recovery_list .list_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 23rpx 0;
+}
+
+#recovery .recovery_main .recovery_list .list_top .list_title {
+  font-size: 34rpx;
+  color: #171A25;
+}
+
+#recovery .recovery_main .recovery_list .list_top .list_add {
+  font-size: 31rpx;
+  color: #171A25;
+}
+
+#recovery .recovery_main .recovery_list .list_top .list_add image {
+  width: 29rpx;
+  height: 30rpx;
+  vertical-align: -3rpx;
+}
+
+#recovery .recovery_main .recovery_list .list_data {
+  background: #fff;
+  box-shadow: 0 3rpx 23rpx 1rpx rgba(77, 77, 77, 0.1);
+  border-radius: 8rpx;
+  min-height: 373rpx;
+  margin: 0 auto;
+  position: relative;
+}
+
+#recovery .recovery_main .recovery_list .list_data .now_button {
+  border: 1rpx solid #3A4159;
+  border-radius: 8rpx;
+  width: 245rpx;
+  line-height: 67rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #3A4159;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+
+#recovery .recovery_main .recovery_list .list_data .add_list {
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+
+#recovery .recovery_main .recovery_list .list_data .add_list .add_data {
+  display: flex;
+  line-height: 83rpx;
+  justify-content: space-between;
+  border-bottom: 1px solid #E3E4EA;
+}
+
+#recovery .recovery_main .recovery_list .list_data .add_list .add_data .name {
+  font-size: 32rpx;
+  color: #171A25;
+  width: 210rpx;
+  flex: none;
+}
+
+#recovery .recovery_main .recovery_list .list_data .add_list .add_data .weight {
+  font-size: 30rpx;
+  color: #3A4159;
+}
+
+#recovery .recovery_main .recovery_list .list_data .add_list .add_data .price {
+  font-size: 30rpx;
+  color: #3A4159;
+}
+
+#recovery .recovery_main .recovery_list .list_data .add_list .add_data .layout-right {
+  display: flex;
+}
+
+#recovery .recovery_main .recovery_list .list_data .add_list .add_data .deiimg {
+  margin-left: 12rpx;
+}
+
+#recovery .recovery_main .recovery_list .list_data .add_list .add_data .deiimg image {
+  width: 27rpx;
+  height: 27rpx;
+}
+
+#recovery .recovery_main .recovery_remarks {
+  background: #fff;
+  box-shadow: 0 3rpx 23rpx 1rpx rgba(77, 77, 77, 0.1);
+  border-radius: 8rpx;
+  margin: 23rpx auto 0;
+  min-height: 271rpx;
+  padding: 0 30rpx;
+  padding-bottom: 23rpx;
+}
+
+#recovery .recovery_main .recovery_remarks .remarks_title {
+  line-height: 81rpx;
+  height: 81rpx;
+  font-size: 30rpx;
+  color: #171A25;
+}
+
+#recovery .recovery_main .recovery_remarks textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 171rpx;
+  border: 1px solid #E3E4EA;
+  font-size: 26rpx;
+  color: #858EA0;
+  line-height: 32rpx;
+  padding: 10rpx 0 0 10rpx;
+}
+
+#recovery .recovery_main .recovery_relief {
+  display: flex;
+  align-items: center;
+  margin: 20rpx auto 0;
+  text-align: center;
+  justify-content: center;
+}
+
+#recovery .recovery_main .recovery_relief image {
+  width: 22rpx;
+  height: 22rpx;
+}
+
+#recovery .recovery_main .recovery_relief .relief_title {
+  font-size: 24rpx;
+  color: #3A4159;
+}
+
+#recovery .recovery_main .recovery_relief .relief_name {
+  color: #2576F8;
+  font-size: 24rpx;
+}
+
+#recovery .placeOrder {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  height: 98rpx;
+  line-height: 98rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+#recovery .placeOrder .placeOrderText {
+  padding-left: 44rpx;
+  border-top: 1px solid #E3E4EA;
+  flex: 1;
+}
+
+#recovery .placeOrder .placeOrderText .placetext {
+  display: flex;
+  line-height: 98rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #171A25;
+  letter-spacing: 0;
+}
+
+#recovery .placeOrder .placeOrderText .placetext .text {
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #171A25;
+  letter-spacing: 0;
+}
+
+#recovery .placeOrder .placeOrderText .placetext .placemoney {
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #171A25;
+  letter-spacing: 0;
+}
+
+#recovery .placeOrder .placeOrderText .placetext .placeunit {
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #171A25;
+  letter-spacing: 0;
+}
+
+#recovery .placeOrder .placeOrderText .limit-title {
+  text-align: left;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #3A4159;
+  display: block;
+  line-height: 26rpx;
+}
+
+#recovery .placeOrder .nextOrder {
+  background: #2576F8;
+  line-height: 98rpx;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  width: 275rpx;
+}
+
+#recovery .layout-pick {
+  background: #fff;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  overflow-y: scroll;
+  padding-bottom: 10rpx;
+  height: 50vh;
+}
+
+#recovery .layout-pick .layout-header {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 34rpx;
+  color: #171A25;
+  border-bottom: 1px solid #E3E4EA;
+  position: relative;
+}
+
+#recovery .layout-pick .layout-header .close {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 30rpx;
+}
+
+#recovery .orderPlace {
+  bottom: 98rpx;
+}
+
+#recovery .orderPlace .orderPlace-list .cator_label {
+  margin-top: 42rpx;
+  padding: 0 21rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#recovery .orderPlace .orderPlace-list .cator_label .cator_label_div {
+  border: 1rpx solid #C9CDD7;
+  border-radius: 8rpx;
+  width: 164rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: #C9CDD7;
+  font-size: 32rpx;
+  margin: 0 0 20rpx 13rpx;
+  display: block;
+}
+
+#recovery .orderPlace .orderPlace-list .cator_label .cator_label_div:nth-child(4n+1) {
+  margin-left: 0;
+}
+
+#recovery .orderPlace .orderPlace-list .cator_label .is_checked {
+  background-color: #2577F7;
+  color: #fff;
+  border: 1rpx solid #2577F7;
+}
+
+#recovery .orderPlace .orderPlace-list .format {
+  margin-top: 25rpx;
+}
+
+#recovery .orderPlace .orderPlace-list .format .format_titel {
+  font-size: 30rpx;
+  color: #1A1D28;
+  margin-bottom: 5rpx;
+}
+
+#recovery .orderPlace .orderPlace-list .format .format_label_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#recovery .orderPlace .orderPlace-list .format .format_label_div label {
+  border: 1rpx solid #C9CDD7;
+  border-radius: 8rpx;
+  width: 164rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: #C9CDD7;
+  font-size: 32rpx;
+  margin-left: 100rpx;
+  margin-bottom: 22rpx;
+  display: block;
+}
+
+#recovery .orderPlace .orderPlace-list .format .format_label_div label:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+#recovery .orderPlace .orderPlace-list .format .format_label_div .is_checked {
+  background-color: #2577F7;
+  color: #fff;
+  border: 1rpx solid #fff;
+}
+
+#recovery .orderPlace .orderPlace-list .format .format_label_div:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+#recovery .selectTimes .selectTimes-list .selectTimes-list_title {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 34rpx;
+  color: #171A25;
+  border-bottom: 1px solid #E3E4EA;
+}
+
+#recovery .selectTimes .selectTimes-list .time_list .time_nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 121rpx;
+  padding: 0 18rpx;
+}
+
+#recovery .selectTimes .selectTimes-list .time_list .time_nav .time_name {
+  margin-top: 30rpx;
+}
+
+#recovery .selectTimes .selectTimes-list .time_list .time_nav .time_l view {
+  line-height: 122rpx;
+}
+
+#recovery .selectTimes .selectTimes-list .time_list .time_nav.active {
+  background: #F6F6F6;
+}
+
+#recovery .drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+}

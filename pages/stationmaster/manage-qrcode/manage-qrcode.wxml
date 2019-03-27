@@ -1,0 +1,4 @@
+<loading hidden="{{loadingHidden}}">加载中...</loading>
+<canvas canvas-id="myCanvas" id="myCanvas"></canvas>
+<button class="button" bindtap="save" wx:if="{{hasAuth}}">保存图片分享到朋友圈</button>
+<button class="button" bindtap="getAuth" wx:else>获取保存到相册权限</button>

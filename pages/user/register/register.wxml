@@ -1,0 +1,9 @@
+<view id="register">
+  <view class="title">登录/注册</view>
+  <view class="inputsyt">
+    <image src="/images/shouji.png" />
+    <input type="number" placeholder="请输入手机号" maxlength="13" placeholder-style="color:#D2D2D2" auto-focus bindinput="bindReplaceInput" />
+  </view>
+  <button class="nextactive" bindtap="reg" wx:if="{{inputType==true}}">下一步</button>
+  <button class="next" wx:else>下一步</button>
+</view>

@@ -1,0 +1,28 @@
+<view id="realPrice">
+    <view class="real_icon">
+        <view wx:for="{{price_topName}}" wx:key="index" bindtap="clickReal" data-id="{{item.id}}" data-index="{{index}}" class="icon_list">
+            <image src="{{imgurl+item.id}}" class="icon_img" wx:if="{{item.isactive==false}}"></image>
+            <image src="{{imgurl+item.id}}&selected=true" class="icon_img" wx:else></image>
+            <view class="icon_title">{{item.name}}</view>
+        </view>
+    </view>
+    <view class="price_list">
+        <block wx:if="{{search_data.length>0}}">
+            <view class="list_item" wx:for="{{search_data}}" wx:key="{{index}}">
+                <view class="item_title">{{item.name}}</view>
+                <view class="item_price">
+                    {{filter.Format(item.price)}}
+                    <view class="item_unit">{{item.unit}}</view>
+                </view>
+            </view>
+        </block>
+        <block wx:else>
+            <view class="no_data">
+                <view class="no_data_title">家电等各种废品均可收购，请联系客服：</view>
+                <view class="no_data_pn">0411-62623999</view>
+            </view>
+        </block>
+    </view>
+    <button class="go_tolist" bindtap="go_tolist">上门回收</button>
+</view>
+<wxs module="filter" src="../../utils/tofixed.wxs"></wxs>

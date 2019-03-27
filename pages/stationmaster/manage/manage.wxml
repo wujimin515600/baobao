@@ -1,0 +1,49 @@
+<view id="stationmaster-manage">
+    <block>
+        <view class="manage_money">
+            <block>
+                <view class="manage_money_all" bindtap="pool">
+                    <view class="money_left">
+                        <text class="title">当前业务总量</text>
+                        <view class="num_mony">{{filter.Format(info.money)||0.00}}</view>
+                    </view>
+                    <view class="money_right">
+                        <view class="money_top">
+                            <text class="title">累计客户</text>
+                            <view class="num_mony">{{info.people||0.00}}</view>
+                        </view>
+                        <view class="money_top money_button">
+                            <text class="title">累计提成</text>
+                            <view class="num_mony">{{filter.Format(info.royalty)||'0.00'}}</view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+            <block>
+                <!-- 分享 -->
+                <button class="share" bindtap="share_button">
+                    <view class="share_icon"></view>
+                    分享推广链接
+                </button>
+                <!-- 推广 -->
+                <button class="spread" bindtap="spread_button">
+                    <view class="spread_icon"></view>
+                    推广二维码
+                </button>
+            </block>
+        </view>
+    </block>
+    <!-- 友情提示 -->
+    <block>
+        <view class="friendship_tips">
+            <text class="title">友情提示</text>
+            <block>
+                <view wx:for="{{friendship_tips}}" wx:key="index" class="guide_detail">
+                    <text class="num">{{index+1}}</text>
+                    <text>{{item}}</text>
+                </view>
+            </block>
+        </view>
+    </block>
+</view>
+<wxs module="filter" src="../../../utils/tofixed.wxs"></wxs>

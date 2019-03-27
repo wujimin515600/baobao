@@ -1,0 +1,117 @@
+<!-- index.wxml -->
+<view id="index" class="{{seektype==true?'':'indexbj'}}">
+  <block>
+    <banner class="index-banner" data='船只'></banner>
+  </block>
+  <block>
+    <block>
+      <view class="cateList">
+        <view class="cList" wx:for="{{cate_list}}" wx:key="{{index}}" wx:if="{{index<4}}" bindtap="cateClick" data-id="{{item.id}}">
+          <image class="icon_img" src="{{imgurl+item.id}}"></image>
+          <view class="cate_info">
+            <view class="cate_info_title">{{item.t_top_name}}</view>
+            <view class="cate_info_info">{{item.description}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <view class="nearby">
+      <navigator url="/pages/goods/recoverypoint/recoverypoint" hover-class="none">
+        <view class="nearby-title">
+          <text class="title">附近回收点</text>
+          <view class="title-href">
+            <text>全部站点</text>
+            <image src="/images/righticon.png" class="nearby-titleicon"></image>
+          </view>
+        </view>
+      </navigator>
+      <!-- 定位成功 -->
+      <view class="nearby-list">
+        <!-- 循环体 -->
+        <block>
+          <site labelType="{{sitetype}}" id="indexList" />
+        </block>
+      </view>
+    </view>
+  </block>
+  <view class="shouhuo" wx:if="{{exist==true}}" style="height:{{o_state==1?'262rpx':''}}">
+    <view class="title">{{o_state==0?'正在匹配业务员':o_state==1?'已接单，正在上门途中':'抱歉，附近没有回收员接单'}}</view>
+    <!-- 状态1 -->
+    <view class="daojishi" wx:if="{{o_state==0}}">{{countDownNum}}</view>
+    <view class="quxiao" bindtap="orderBy" wx:if="{{o_state==0}}">取消订单</view>
+    <!-- 状态2 -->
+    <view class="people" wx:if="{{o_state==1}}">
+      <image src="/images/nameicon.png" />
+      <text>{{rs_name?rs_name:''}}</text>
+    </view>
+    <view class="o_stateTwo" wx:if="{{o_state==1}}">
+      <view class="cancalButton" bindtap="orderBy">取消订单</view>
+      <view class="callTel" bindtap="callTel">
+        <text class="telicon"></text>
+        打电话
+      </view>
+    </view>
+    <!-- 状态3 -->
+    <view class="later" wx:if="{{o_state==2}}">请稍后再试</view>
+    <view class="laterbutton" wx:if="{{o_state==2}}" bindtap="confirmButton">确认</view>
+    <view class="gotoCent" bindtap="goCent">
+      <view class="runond">
+        <image src="/images/idnex.png" />
+      </view>
+    </view>
+  </view>
+  <!-- 取消理由列表 -->
+  <view class="reasonList" wx:if="{{cancalType==true}}">
+    <view class="reasonListbox">
+      <view class="title">请选择取消理由</view>
+      <view class="padddiv">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{reasonListData}}" wx:key="{{index}}">
+            <radio color="#298CFC" value="{{item.id}}" checked="{{item.checked}}" />
+            <text>{{item.reason}}</text>
+          </label>
+        </radio-group>
+        <input type="text" placeholder="其他" class="ohter" bindinput="inputother" />
+      </view>
+      <view class="reasonbutton">
+        <view class="caler" bindtap="cancal">取消</view>
+        <view class="sure" bindtap="cancelOrders">确认</view>
+      </view>
+    </view>
+  </view>
+  <!-- 取消弹框 -->
+  <view class="cancleShow" wx:if="{{cancleShowType==true}}">
+    <image src="/images/cancalicon.png" />
+    <text>订单已取消</text>
+  </view>
+</view>
+<block>
+  <tabbar wx:if="{{exist==false}}" />
+</block>
+<!-- 首投有礼 -->
+<view class="layout-fixed-cover" wx:if="{{showCover}}"></view>
+<view class="polite" wx:if="{{actInvite}}">
+  <image src="https://b.bbrecycle.cn/static_banners/share/bg-invite.jpeg" class="layout-banner" bindtap="goToInviteACT" />
+  <image src="/images/icon-close.png" class="icon-close" bindtap="closeActInvite" />
+</view>
+<!-- 评价 -->
+<view class="layout-evaluate" wx:if="{{showEvaluate}}">
+  <view class="layout-header">
+    评价
+    <image class="icon-close" src="/images/icon-dialog-close.png" bindtap="onCloseRate" />
+  </view>
+  <view class="layout-body">
+    <view class="layout-rank-list">
+      <image class="item-rank" src="/images/icon-rate{{index<=rateRank?'-act':''}}.png" wx:for="{{rateRankList}}" wx:key="index" data-index="{{index}}" wx:if="{{index>0}}" bindtap="onClickRateRank" />
+    </view>
+    <view class="text-rate-desc">{{rateRankList[rateRank]}}</view>
+    <view class="layout-labels-list">
+      <view class="item-label {{item.act?'act':''}}" wx:for="{{rateLabels}}" wx:key="index" data-index="{{index}}" wx:if="{{index<5}}" bindtap="onClickRateLabel">
+        {{item.label}}
+      </view>
+    </view>
+    <textarea name="" id="" cols="30" rows="10" placeholder="其他想说的（匿名并不会告知上门人员）"></textarea>
+    <button bindtap="rateSubmit">匿名提交</button>
+  </view>
+</view>
+<view class="zhebic" wx:if="{{cancalType==true ||cancleShowType==true}}" bindtap="zhibc"></view>

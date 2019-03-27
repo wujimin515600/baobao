@@ -1,0 +1,38 @@
+<view id="summary_detial">
+    <!-- 搜索 -->
+    <block>
+        <view class="serach">
+            <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+                <view class="date_style">{{date?date:'全部日期'}}</view>
+            </picker>
+        </view>
+    </block>
+    <!-- 搜索结果 -->
+    <block>
+        <view class="serach_list">
+            <block wx:if="{{list.length>0}}">
+                <view class="list_detail" wx:for="{{list}}" wx:key="index" bindtap="go_detail" data-id="{{item.id}}">
+                    <view class="detail_title">
+                        <view class="info">
+                            <text class="phone">{{item.phone}}</text>
+                            <text class="name" wx:if="{{item.name}}">{{item.name}}</text>
+                        </view>
+                        <view class="money">
+                            <text class="money_num">{{filter.Format(item.amount)}}</text>
+                        </view>
+                    </view>
+                    <view class="detail_time">
+                        <text class="times">注册时间：{{filter_time.getDate(item.complete_time)}}</text>
+                        <text class="money_num_two">{{filter.Format(item.promotion)}}</text>
+                    </view>
+                </view>
+            </block>
+            <block wx:else>
+                <view class="no_data">暂无数据</view>
+            </block>
+        </view>
+        <view class="bitter_end" wx:if="{{isHideLoadMore==true}}">到底啦～</view>
+    </block>
+</view>
+<wxs module="filter_time" src="../../../utils/dataFr.wxs"></wxs>
+<wxs module="filter" src="../../../utils/tofixed.wxs"></wxs>

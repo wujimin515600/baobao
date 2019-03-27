@@ -1,0 +1,10 @@
+<view id="recoverypoint">
+    <map id="map" longitude="{{markers[0].longitude}}" latitude="{{markers[0].latitude}}" scale="14" markers="{{markers}}" bindcontroltap="controltap" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height:625rpx;"></map>
+    <scroll-view scroll-y style='height:{{boxHeight}}px;' bindscrolltolower="lower" scroll-top="{{scrollTop}}">
+        <view class="recoverypointList">
+            <block>
+                <site labelType="{{sitetype}}" lngs="{{movelng}}" lats="{{movelat}}" id="mapList" />
+            </block>
+        </view>
+    </scroll-view>
+</view>

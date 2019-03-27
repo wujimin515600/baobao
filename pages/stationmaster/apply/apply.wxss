@@ -1,0 +1,80 @@
+page {
+  background: #fafafa;
+}
+
+#stationmaster-apply {
+  border-top: 1rpx solid #E3E4EA;
+}
+
+#stationmaster-apply .apply_input {
+  background: #fff;
+}
+
+#stationmaster-apply .apply_input .apply_name {
+  line-height: 105rpx;
+  border-bottom: 1rpx solid #E3E4EA;
+  margin: 0 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+#stationmaster-apply .apply_input .apply_name text {
+  font-size: 32rpx;
+  color: #171A25;
+}
+
+#stationmaster-apply .apply_input .apply_name input {
+  line-height: 105rpx;
+  margin-left: 74rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #171A25;
+}
+
+#stationmaster-apply .apply_input .last {
+  border-bottom: 0;
+}
+
+#stationmaster-apply .apply_guide {
+  font-size: 28rpx;
+  color: #3A4159;
+  margin: 40rpx 37rpx 0;
+}
+
+#stationmaster-apply .apply_guide .title {
+  margin-bottom: 18rpx;
+  display: block;
+}
+
+#stationmaster-apply .apply_guide .guide_detail {
+  display: flex;
+}
+
+#stationmaster-apply .apply_guide .guide_detail text {
+  font-size: 24rpx;
+  color: #3A4159;
+  line-height: 40rpx;
+  display: block;
+}
+
+#stationmaster-apply .apply_guide .guide_detail .num {
+  margin-right: 10rpx;
+}
+
+#stationmaster-apply .apply_guide .tips {
+  text-align: center;
+  margin-top: 25rpx;
+}
+
+#stationmaster-apply .apply_guide button {
+  display: block;
+  background: #236BF6;
+  border-radius: 12rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 82rpx;
+  width: 504rpx;
+  margin: 75rpx auto 0;
+}

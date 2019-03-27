@@ -1,0 +1,87 @@
+#receivingAddress .receivingAddress {
+  padding: 0 30rpx;
+}
+
+#receivingAddress .receivingAddress .inputText {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 105rpx;
+  height: 105rpx;
+  border-bottom: 2rpx solid #E3E4EA;
+}
+
+#receivingAddress .receivingAddress .inputText .inputLabel {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #171A25;
+  vertical-align: 15rpx;
+  width: 284rpx;
+}
+
+#receivingAddress .receivingAddress .inputText .clickmap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 386rpx;
+}
+
+#receivingAddress .receivingAddress .inputText .clickmap .select .mapiocn {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAcCAYAAACK7SRjAAAAAXNSR0IArs4c6QAABHNJREFUSA2VVV1sVEUUPjP7U2xLJJEHiSbGF2MwMZEYbXjRRGONAqXdbWo0onV7Gy3bGqEPKhVIBPWBbmJ7rdi7bQK+WLpbUSoJD5j4ovCAiRqUN15MgAQCpFRl273j9927s727UKqT7J4553znuzNzzplRcocx5hVbfDEdRsxTgN1vRNYqkcuY/6lE/aBFzfQ5qVPLUQB763AnC0/6i5ITMRtv9dZb1I86Ljuyb6RP13t0vWFkvDhkyvITiZWSi6JVLh6PPa1iyfvuXbO+gZI67YEfOOIZV89Vs/IRb9oTIz0IKouoT+5uWP3xtm2t8/VBVj98+ETT9Ztz72Eh7xojMVGSH3A6HeuvkrvjhR0432EYbiilurJO+rgFrSRdr/CCMWYKOWlGHnZme9M4UiyPf2Ne4dGymJ+hamx3a38m9S3t/2eMThS3iG+OYhc+trChz0n/GicBzmA/t4UvfXo7YvfQzD3+gmnBkT2M5ZzTCXUq+1rHlejHGTc6XhjB6t8uK9kP32Z1cPLo+tLiwllRak4n9YP1QdjyW/jwAZRjoyVDGf6FvAzi6D63NspgESX/vBizOhlPPKIXyotbQoCZqidGgt/3jRkjMfJwQisZpqROO/1R8jDeTNFGXo1VPUcFNTlLaYc7PvOQGLUbug/Srf1O+vms0zlISZ12+gOcDYK0POTV2N4D9OmY/i2CEV/5bUhOA854EqTfRH2BDjv9IW7Ja3nIi5WbdXStbV53YQkSlNFj1LWKnYza7dzaUQQBztotD3mxQynRcVXmkxYQSCU3Qt0019irSsVexYUOy0NebdjiGKX568EOqrG+oO5ZtaaraotMqvYKzrosD3lx/uocHaosNZdUrGkVsq4uoDKeRf3mjhw5G+yMkjrt9DcnYl9Z4iiPMuoPjcb4jkbfSKUkQ2jfK5uuwtmLhJZA9M6la79fAekZSuq0IyFOd3f7tTAi/Lc8aKbjOpa46xhWcBOFv5kNFQVmeztnUUZPoGlOA9wI0g2U1Gkf6EkFC7MxQTx4yEdevb37xYvI6hcAsKFyyDJysTQGMh2/9PemW5piyTVxFX+ckjrtSyjkBnGMh02Tj7zB3dIgiY/+ltLLALS6+cIeAPZGAznPZNrmIM7U260+6hX34hOt0C+Tj/bgsXCctktKxbp4j6Oz9uBs36Tzv44Qb3YznjzkY2xAzkm/0/E92jnLOZI1hpfl9WC+wl+AAz6AIT7gqcRUyanjLA/ysg/P3Z9w8zMvVXC3FaHfnyCecYyPAmvI6QheESW7MNW+73/pjhfbowF2Tjv9xGGnu+zrY/2UNZURdbj56Q99X4ZYz4hujz57fNZwJX6NHklqLfuyPZ0fRGPtfFlyAlxv+gCaYicS9Q9+m0ByEh99BkmfxW8VSm4YN+SgJauXdyQneMQruCji7Xx9cABDuMX3oZka8XJ9NuCkwwKoZ63oK5IzWW6+6EFmLAdeo4lsT8qBRMMuP1YkZyiItesVc0aZV3EhHco6qUEQ+8vThp5/AZpR7p2TzVSmAAAAAElFTkSuQmCC) no-repeat;
+  background-size: cover;
+  width: 21rpx;
+  height: 27rpx;
+  display: inline-block;
+}
+
+#receivingAddress .receivingAddress .inputText .clickmap .select .text {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #858EA0;
+  margin-left: 11rpx;
+}
+
+#receivingAddress .receivingAddress .inputText .clickmap .righticon {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAYAAAD0OH0aAAAAAXNSR0IArs4c6QAAARxJREFUOBGVkbFOAzEMhv27FQNrWZkZkGBhZ4CBlRmphQILU8vWdqZlozAj0Ss8AGJiKc/Aq/AAjbFPSnXlksthKYqcfJ/j82E8zSbi5IwYw1Gv80aJ4Bwm2iYn2fhxdpHgia2yQk4Xy5KeUxJbG2jQVVGaPMzPNQ8G/KlVthc0Z12OwZeDfnvm7/2+EuygjrQm1JFKQkoKClVSVAhLuG7YRSwWn+/fRyenTb0/1AUhHNgIo3H/9LqvLdx4AMBHtCWD3dItRKRlgsLZoNfuBoUoDLiSUAXnL/n+bE/Ba0IdeCXcTbM9ndlX6QO1Z4OKgf/AJja1xlzoz+gClf0rLKAfS0B4yedcARvHW5u7x9jAzvC209WfU+rZoGL8AkRis5I7i39lAAAAAElFTkSuQmCC) no-repeat;
+  background-size: cover;
+  width: 12rpx;
+  height: 22rpx;
+  display: block;
+  margin-top: 42rpx;
+}
+
+#receivingAddress .receivingAddress .inputText input {
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #171A25;
+  display: inline-block;
+  line-height: 105rpx;
+  height: 105rpx;
+}
+
+#receivingAddress .receivingAddress .inputText .phcolor {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #858EA0;
+}
+
+#receivingAddress .holdAddress {
+  background: #C9CDD7;
+  box-shadow: 0 15rpx 28rpx 0 rgba(201, 205, 215, 0.74);
+  border-radius: 48rpx;
+  width: 595rpx;
+  height: 96rpx;
+  line-height: 96rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 36rpx;
+  color: #858EA0;
+  text-align: center;
+  margin: 83rpx auto 0;
+}
+
+#receivingAddress .selectaddress {
+  background-image: linear-gradient(-90deg, #215FF4 0%, #298CFC 100%);
+  box-shadow: 0 15rpx 28rpx 0 rgba(40, 132, 251, 0.57);
+  border-radius: 48rpx;
+  color: #fff;
+}

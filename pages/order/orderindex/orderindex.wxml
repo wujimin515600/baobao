@@ -1,0 +1,89 @@
+<view id="orderIndex">
+    <block>
+        <view class="orderTop">
+            <view class="orderList">
+                <view class="listItem" wx:for="{{listData}}" wx:key="{{key}}" wx:for-index="bindex">
+                    <image src="{{item.icon}}" class="shopimg" />
+                    <text class="list-name">{{item.c_type}}</text>
+                    <view class="list-price" wx:if="{{item.min_price!=null&&item.max_price!=null}}">
+                        <text class="price">{{item.min_price}} - {{item.max_price}}</text>
+                        <text class="unit">元/公斤</text>
+                    </view>
+                    <view class="list-price" wx:else>
+                        <text class="prcs">价格面议</text>
+                    </view>
+                    <view class="inputText" wx:if="{{item.min_price!=null&&item.max_price!=null}}">
+                        <image src="/images/order/reduce.png" class="reduce" data-bindex="{{bindex}}" bindtap="reduce" />
+                        <text class="textnum">{{item.num}}</text>
+                        <image src="/images/order/add.png" class="add" data-bindex="{{bindex}}" bindtap="add" />
+                    </view>
+                </view>
+            </view>
+            <view class="uptime">更新时间：{{filter.getDate(updataTime)}}</view>
+        </view>
+    </block>
+    <block>
+        <view class="orderAdress" bindtap="moveAddress">
+            <view class="orderAdress-left" wx:if="{{addressType==true}}">
+                <text class="adress">{{takeAddress.address}}</text>
+                <view class="adressname">
+                    <view class="name" wx:if="{{takeAddress.contact}}">
+                        {{takeAddress.contact}}
+                    </view>
+                    <view class="tel">{{tel}}</view>
+                </view>
+            </view>
+            <view class="orderAdress-left" wx:else>
+                <text class="adress">请填写收货地址</text>
+            </view>
+            <view class="{{addressType==true?'orderAdress-right':'adress-right'}}">
+                <image src="/images/order/bianji.png" />
+            </view>
+        </view>
+    </block>
+    <block>
+        <view class="placeOrder">
+            <view class="placeOrderText" bindtap="powerDrawer" data-statu="open">
+                <view class="placetext">
+                    <text class="placeOrdericon"></text>
+                    <text class="text">预计</text>
+                    <text class="placemoney">{{budgetMoney}}</text>
+                    <text class="placeunit">元</text>
+                </view>
+                <view class="limit-title">重量>20KG可上门回收</view>
+            </view>
+            <view class="nextOrder" bindtap="placeOrder">一键下单</view>
+        </view>
+    </block>
+    <block>
+        <view class="orderPlace" animation="{{animationData}}" wx:if="{{showModalStatus}}">
+            <scroll-view scroll-y style='height:{{boxHeight}}px;' bindscrolltolower="lower" scroll-top="{{scrollTop}}">
+                <view class="orderPlace-list" wx:for="{{listData}}" wx:key="{{index}}" wx:if="{{item.num>0}}" wx:for-index="bindex">
+                    <view class="innt" style="{{item.txtStyle}}" data-item="{{item}}" data-bindex="{{bindex}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE">
+                        <view class="orderPlacebox">
+                            <view class="list-left">
+                                <image src="{{item.icon}}" />
+                                <text class="list-name">{{item.c_type}}</text>
+                            </view>
+                            <view class="list-middle">
+                                <text class="price">{{item.min_price}} - {{item.max_price}}</text>
+                                <text class="unit">元/公斤</text>
+                            </view>
+                            <view class="list-right">
+                                <image src="/images/order/reduce.png" class="reduce" data-bindex="{{bindex}}" bindtap="reduce" />
+                                <text class="textnum">{{item.num}}</text>
+                                <image src="/images/order/add.png" class="add" data-bindex="{{bindex}}" bindtap="add" />
+                            </view>
+                        </view>
+                        <view class="topthree  innt" data-bindex="{{bindex}}" bindtap="delete_btn">
+                            <image src="/images/order/del.png" />
+                            <text class="del">删除</text>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+    </block>
+    <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>
+</view>
+<wxs module="filter" src="../../../utils/dataFr.wxs"></wxs>

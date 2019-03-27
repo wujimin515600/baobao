@@ -1,0 +1,23 @@
+page {
+    background: #e8eaee;
+
+    canvas {
+        height: 950rpx;
+        width: 650rpx;
+        margin: 40rpx auto 60rpx;
+        border-radius: 26rpx;
+        overflow: hidden;
+    }
+}
+
+.button {
+    text-align: center;
+    margin: auto;
+    width: 544rpx;
+    height: 92rpx;
+    line-height: 92rpx;
+    color: white;
+    background-image: linear-gradient(-180deg, #298CFC 0%, #215FF4 100%);
+    box-shadow: 0 15px 28px 0 rgba(40, 132, 251, 0.57);
+    border-radius: 100px;
+}

@@ -1,0 +1,180 @@
+#recoverypointDetail .mapdetial {
+  position: relative;
+}
+
+#recoverypointDetail .mapdetial .gpsButton {
+  position: absolute;
+  right: 40rpx;
+  bottom: -40rpx;
+  background: linear-gradient(-180deg, #298BFC 0%, #215FF4 100%);
+  width: 125rpx;
+  height: 125rpx;
+  border-radius: 50%;
+}
+
+#recoverypointDetail .mapdetial .gpsButton image {
+  width: 29rpx;
+  height: 29rpx;
+  display: block;
+  margin: 24rpx auto 8rpx;
+}
+
+#recoverypointDetail .mapdetial .gpsButton text {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  text-align: center;
+  display: block;
+}
+
+#recoverypointDetail .details {
+  padding: 35rpx 30rpx 0;
+}
+
+#recoverypointDetail .details .details-top {
+  border-bottom: 2rpx solid #E3E4EA;
+  padding-bottom: 30rpx;
+}
+
+#recoverypointDetail .details .details-top .details-title {
+  display: flex;
+  line-height: 59rpx;
+}
+
+#recoverypointDetail .details .details-top .details-title .title-name .mapicon {
+  width: 24rpx;
+  height: 30rpx;
+  margin-right: 16rpx;
+  vertical-align: 15rpx;
+}
+
+#recoverypointDetail .details .details-top .details-title .title-name text {
+  font-family: PingFangSC-Medium;
+  font-size: 42rpx;
+  color: #171A25;
+  margin-right: 47rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 220rpx;
+  display: inline-block;
+}
+
+#recoverypointDetail .details .details-top .details-title .recover-name .recoveryicon {
+  width: 29rpx;
+  height: 29rpx;
+  margin-right: 12rpx;
+  vertical-align: middle;
+}
+
+#recoverypointDetail .details .details-top .details-title .recover-name text {
+  font-family: PingFangSC-Regular;
+  font-size: 34rpx;
+  color: #3A4159;
+}
+
+#recoverypointDetail .details .details-top .details-address {
+  display: flex;
+  margin-left: 43rpx;
+}
+
+#recoverypointDetail .details .details-top .details-address .addressKm {
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #858EA0;
+  line-height: 50rpx;
+}
+
+#recoverypointDetail .details .details-top .details-address .addresstitle text {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #858EA0;
+  vertical-align: 4rpx;
+}
+
+#recoverypointDetail .details .details-top .details-address .addresstitle text:first-child {
+  width: 2rpx;
+  height: 27rpx;
+  background: #C9CDD7;
+  display: inline-block;
+  margin: 0 20rpx 0 15rpx;
+  vertical-align: 0;
+}
+
+#recoverypointDetail .details .details-list {
+  padding: 0 43rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#recoverypointDetail .details .details-list .details-listBox {
+  display: flex;
+  margin: 31rpx 0 0 0;
+  width: 303rpx;
+}
+
+#recoverypointDetail .details .details-list .details-listBox image {
+  width: 81rpx;
+  height: 81rpx;
+  margin-right: 12rpx;
+}
+
+#recoverypointDetail .details .details-list .details-listBox .text .text-name {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #3A4159;
+  display: block;
+  line-height: 24rpx;
+  margin-top: 8rpx;
+}
+
+#recoverypointDetail .details .details-list .details-listBox .text .text-weight {
+  display: block;
+  line-height: 24rpx;
+}
+
+#recoverypointDetail .details .details-list .details-listBox .text .text-weight .num {
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #171A25;
+  display: inline-block;
+}
+
+#recoverypointDetail .details .details-list .details-listBox .text .text-weight .kg {
+  font-family: PingFangSC-Medium;
+  font-size: 22rpx;
+  color: #0B0013;
+  display: inline-block;
+}
+
+#recoverypointDetail .details .details-list .details-listBox:nth-child(2n+1) {
+  margin-left: 0;
+}
+
+#recoverypointDetail .details .telbutton {
+  background-image: linear-gradient(-90deg, #215FF4 0%, #298CFC 100%);
+  border-radius: 48rpx;
+  width: 595rpx;
+  height: 96rpx;
+  line-height: 96rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 80rpx;
+  left: 50%;
+  margin-left: -297.5rpx;
+}
+
+#recoverypointDetail .details .telbutton image {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+#recoverypointDetail .details .telbutton text {
+  font-family: PingFangSC-Regular;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  margin-left: 20rpx;
+}

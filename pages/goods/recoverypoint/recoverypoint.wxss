@@ -1,0 +1,7 @@
+page {
+  background: #f7f7f7;
+}
+
+#recoverypoint .recoverypointList {
+  padding: 0 30rpx 30rpx;
+}

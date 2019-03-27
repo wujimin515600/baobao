@@ -1,0 +1,12 @@
+<view class="layout-mid">
+    <image class="icon-coin" src="/images/icon-coin.png"></image>
+    <view class="text-h2">您的提现申请已受理</view>
+    <view class="layout-balance">
+        <view class="text-number">{{filter.Format(value)}}</view>
+        <view class="text-unit">元</view>
+    </view>
+    <view class="href-detail">工作人员将在1-2个工作日内微信转账</view>
+    <view class="href-detail">如遇问题，请联系400-888-999</view>
+</view>
+<button bindtap="submit">确定</button>
+<wxs module="filter" src="../../../utils/tofixed.wxs"></wxs>

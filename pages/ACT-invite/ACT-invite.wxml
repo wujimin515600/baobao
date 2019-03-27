@@ -1,0 +1,22 @@
+<image src="https://b.bbrecycle.cn/static_banners/share/bg-invite-result.png" class="bg-image" mode="widthFix" bindtap="goToInviteACT" />
+<view class="layout-page">
+    <view class="layout-invited-list">
+        <block wx:if="{{list&&list.length>0}}">
+            <view class="layout-li" wx:for="{{list}}" wx:key="{{index}}">
+                <view class="layout-item">{{item.user.pn}}</view>
+                <view class="layout-item">首投{{item.first_order_amount}}元</view>
+                <view class="layout-item">奖励{{item.promotion}}保保金</view>
+            </view>
+        </block>
+        <block wx:else>
+            <view class="layout-li">
+                <view class="layout-item no-data">暂无记录</view>
+            </view>
+        </block>
+    </view>
+    <button class="btn-invite" bindtap="openShare">立即邀请</button>
+</view>
+<!-- 分享 -->
+<view class="cover-bg" scroll-top="0" wx:if="{{shareVisable}}">
+    <share-cpt bind:cancelShare="cancelShare" bind:shareWithFriends="shareWithFriends" bind:onShareAppMessage="onShareAppMessage"></share-cpt>
+</view>

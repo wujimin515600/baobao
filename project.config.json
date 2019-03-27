@@ -1,0 +1,183 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.1",
+	"appid": "wxfbbd60114365d79f",
+	"projectname": "baobao_C",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 20,
+			"list": [
+				{
+					"id": -1,
+					"name": "yijianiadan",
+					"pathName": "pages/order/orderindex/orderindex",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "收货完成",
+					"pathName": "pages/order/goodsfinish/goodsfinish",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/user/activeregister/activeregister",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/userCenter/center/center",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "站长申请",
+					"pathName": "pages/userCenter/stationmaster-apply/stationmaster-apply",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "站长管理",
+					"pathName": "pages/stationmaster/manage/manage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客户汇总",
+					"pathName": "pages/userCenter/pool-summary/pool-summary",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "站长管理",
+					"pathName": "pages/stationmaster/manage/manage",
+					"query": ""
+				},
+				{
+					"id": 8,
+					"name": "申请",
+					"pathName": "pages/stationmaster/apply/apply",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分享",
+					"pathName": "pages/stationmaster/manage-share/manage-share",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "一键回收",
+					"pathName": "pages/recovery/recovery",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "拉新",
+					"pathName": "pages/user/activeregister/activeregister",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分享相册",
+					"pathName": "pages/stationmaster/manage-qrcode/manage-qrcode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "一对多活动",
+					"pathName": "pages/ACT-invite/ACT-invite",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 15,
+					"name": "余额",
+					"pathName": "pages/userCenter/myPoints/myPoints",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "保保金明细",
+					"pathName": "pages/userCenter/points-detail/points-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "保保金明细申请",
+					"pathName": "pages/userCenter/applyResult/applyResult",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "一对多分享拉辛",
+					"pathName": "pages/user/activeregister/activeregister",
+					"query": "share_referrer_code=e85517ffb4b843f4bc1b1c59a353c9fe",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的投递",
+					"pathName": "pages/userCenter/delivery/delivery",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评论首页",
+					"pathName": "pages/home/home",
+					"query": "rateId=132",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "验证码",
+					"pathName": "pages/user/verificationCode/verificationCode",
+					"query": "rateId=132",
+					"scene": null
+				}
+			]
+		}
+	}
+}

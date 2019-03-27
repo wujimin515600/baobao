@@ -1,0 +1,62 @@
+page {
+  background: white;
+}
+
+.layout-mid {
+  padding: 100rpx 30rpx 0;
+  box-sizing: border-box;
+  text-align: center;
+  background: white;
+}
+
+.layout-mid .icon-coin {
+  width: 102rpx;
+  height: 102rpx;
+  margin-bottom: 40rpx;
+}
+
+.layout-mid .text-h2 {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 36rpx;
+  color: #171A25;
+  margin-bottom: 20rpx;
+}
+
+.layout-mid .layout-balance {
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+
+.layout-mid .layout-balance .text-number {
+  font-family: DINAlternate-Bold;
+  font-size: 80rpx;
+  color: #171A25;
+  display: inline-block;
+}
+
+.layout-mid .layout-balance .text-unit {
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  display: inline-block;
+  color: #171A25;
+  margin-left: 10rpx;
+}
+
+.layout-mid .href-detail {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #80888C;
+}
+
+button {
+  margin-top: 491rpx;
+  color: white;
+  background: #236BF6;
+  width: 322rpx;
+  height: 96rpx;
+  line-height: 96rpx;
+  margin-bottom: 30rpx;
+  background-image: linear-gradient(-90deg, #2A8DFD 0%, #215DF4 100%);
+  border-radius: 54rpx;
+}

@@ -1,0 +1,36 @@
+<view class="layout-mid">
+    <view class="text-h2">可提现余额</view>
+    <view class="layout-balance">
+        <view class="text-number">{{filter.Format(balance)}}</view>
+        <view class="text-unit">元</view>
+    </view>
+    <view class="href-detail" bindtap="hrefDetail">查看明细 ></view>
+    <view class="layout-form">
+        <view class="row">
+            <view class="unit">¥</view>
+            <input type="number" bindinput="bindValue" value="{{value}}" />
+            <view class="set-all" bindtap="setAll">全部提现</view>
+        </view>
+        <view class="row">
+            <view class="label">备注</view>
+            <input type="text" />
+        </view>
+    </view>
+</view>
+<button bindtap="submit">提现到微信</button>
+<view class="tips" bindtap="openDialog">提现规则？</view>
+<!-- 规则 -->
+<view class="bg-cover" wx:if="{{dialogVisable}}">
+    <view class="dialog">
+        <view class="layout-title">兑换规则</view>
+        <view class="layout-content">
+            <view class="text-p">1.单日最多可兑换3笔(以申请成功为准)</view>
+            <view class="text-p">2.单笔兑换数量须≧10环保金</view>
+            <view class="text-p">3.实际到账时间以第三方机构(微信)为准</view>
+            <view class="text-p">4.提现中的金额将先冻结，如提现失败将返回到账户中，可再次发起提现</view>
+            <view class="text-p">5.如2个工作日内仍未到账，可联系客服0411-62623999</view>
+        </view>
+        <view class="layout-footer" bindtap="closeDialog">确认</view>
+    </view>
+</view>
+<wxs module="filter" src="../../../utils/tofixed.wxs"></wxs>

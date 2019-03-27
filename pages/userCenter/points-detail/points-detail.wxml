@@ -1,0 +1,30 @@
+<view id="pool-summary">
+    <view class="serach_list">
+        <block wx:if="{{list.length>0}}">
+            <view class="list_detail" wx:for="{{list}}" wx:key="index" data-client="{{item.client}}" data-pn="{{item.pn}}" data-name="{{item.name}}">
+                <view class="detail_title">
+                    <view class="info">
+                        <text class="phone">{{t_sourceMap[item.t_source]}}</text>
+                        <text class="name">- {{t_stateMap[item.t_state]}}</text>
+                    </view>
+                    <view class="money">
+                        <view class="text"></view>
+                        <view class="money_num">
+                            {{item.amount?filter.Format(item.amount):'0.00'}}
+                        </view>
+                    </view>
+                </view>
+                <view class="detail_time">
+                    <text class="times">{{filter_time.getDate(item.create_time*1000)}}</text>
+                    <!-- <text class="tips">冻结金额</text> -->
+                </view>
+            </view>
+        </block>
+        <block wx:else>
+            <view class="no_data">暂无数据</view>
+        </block>
+    </view>
+    <view class="bitter_end" wx:if="{{isHideLoadMore==true}}">到底啦～</view>
+</view>
+<wxs module="filter_time" src="../../../utils/dataFr.wxs"></wxs>
+<wxs module="filter" src="../../../utils/tofixed.wxs"></wxs>

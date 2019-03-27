@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "站长分享",
+    "usingComponents": {
+        "share-cpt": "/components/share-cpt/share-cpt"
+    }
+}

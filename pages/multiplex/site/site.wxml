@@ -1,0 +1,71 @@
+<!-- 循环体 -->
+<view id="siteBox">
+    <block wx:if="{{siteList&&siteList.length>0}}">
+        <navigator url="/pages/goods/recoverypointDetail/recoverypointDetail?id={{item.recycle_bin.id}}" hover-class="none" wx:for="{{siteList}}" wx:key="{{index}}" wx:if="{{siteList.length>0}}">
+            <view class="listChild">
+                <view class="listChild-title">
+                    <view class="firstbox">
+                        <view class="address">
+                            <image src="/images/dingweiweizhi.png" class="mapicon"></image>
+                            <text>{{item.recycle_bin.rb_name}}</text>
+                        </view>
+                        <view class="peoplename">
+                            <image src="/images/swticonkuaidiyuan.png" class="peopleicon"></image>
+                            <text>{{item.recycle_bin.admins[0]}}</text>
+                        </view>
+                    </view>
+                    <view class="kmbox">
+                        <text>{{filter.Format(item.distance/1000)}}km</text>
+                        <!-- <text>1000.00km</text> -->
+                    </view>
+                </view>
+                <view class="listChild-flex">
+                    <view class="childlabel">
+                        <view class="childlabel-list" wx:for="{{item.recycle_bin.c_products}}" wx:key="k" wx:for-item="labelitem" wx:if="{{index<4}}">
+                            <image src="{{iconUrl+labelitem.id}}"></image>
+                            <view class="text">
+                                <view class="text-name">{{labelitem.t_top_name}}</view>
+                                <view class="text-weight">
+                                    <view class="num">
+                                        {{labelitem.price_min?labelitem.price_min:0}} - {{labelitem.price_max?labelitem.price_max:0}}
+                                        <text class="kg">{{labelitem.unit==0?'个/元':'元/公斤'}}</text>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="childmore">
+                        <text>更多</text>
+                        <image src="/images/righticon.png" class="moreicon"></image>
+                    </view>
+                </view>
+            </view>
+        </navigator>
+    </block>
+    <!-- 定位不成功或者附近没有站点 -->
+    <block wx:else>
+        <view class="seekFailed">
+            <block>
+                <image src="/images/seek.png" class="seek"></image>
+                <view class="seek-title">{{getlocationType==false?'获取定位失败':'抱歉,附近没有回收站点'}}</view>
+            </block>
+            <view class="twoButton" wx:if="{{labelType=='index'}}">
+                <view class="refresh" bindtap="refreshClcik">
+                    <text class="refreshicon"></text>
+                    <text>刷新重试</text>
+                </view>
+                <view class="phone" bindtap="calltel">
+                    <text class="phoneicon"></text>
+                    <text>电话收货</text>
+                </view>
+            </view>
+            <view class="twoButton" wx:else>
+                <view class="refresh" bindtap="moveCLick">
+                    <text class="refreshicon"></text>
+                    <text>刷新重试</text>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>
+<wxs module="filter" src="../../../utils/tofixed.wxs"></wxs>

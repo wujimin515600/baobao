@@ -1,0 +1,174 @@
+.page {
+    margin-top: calc(0rpx - ((220vw - 100vh)/3));
+    height: calc(((220vw - 100vh)/3) + 100vh);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.bg-page {
+    height: 220vw;
+    width: 100vw;
+}
+
+.salesman {
+    text-align: center;
+    margin-top: 40rpx;
+    position: fixed;
+    bottom: 50rpx;
+    color: white;
+    text-align: center;
+    font-size: 32rpx;
+    width: 100%;
+}
+
+#activeregister {
+    width: 650rpx;
+    height: 600rpx;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    padding: 43rpx;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    // top: calc((220vw - 100vh) /3 + 475rpx);
+    top: 610rpx;
+
+    .title {
+        font-size: 48rpx;
+        font-family: PingFangSC-Medium;
+        color: #171A25;
+        margin-bottom: 50rpx;
+    }
+
+    .layout-input {
+        padding: 13rpx 0;
+        margin-bottom: 40rpx;
+        border-bottom: 1px solid #E3E4EA;
+        display: flex;
+        align-items: center;
+
+        .icon {
+            width: 35rpx;
+            height: 35rpx;
+            flex: none;
+            margin-right: 30rpx;
+        }
+
+        input {
+            flex: 1;
+            line-height: 42rpx;
+        }
+
+        .buttonget {
+            line-height: 42rpx;
+            font-size: 34rpx;
+            padding: 0;
+            color: #2576F8;
+            flex: none;
+            width: 190rpx;
+            text-align: right;
+            background: none;
+        }
+    }
+
+
+
+
+    .codeDiv {
+        display: flex;
+    }
+
+    .codeDiv .phone {
+        flex: 5;
+        font-family: PingFangSC-Regular;
+        font-size: 34rpx;
+        color: #171A25;
+    }
+
+
+
+
+    .inputCode {
+        position: relative;
+
+        .codes {
+            margin-top: 77rpx;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .iptbox {
+            font-size: 48rpx;
+            font-family: DINAlternate-Bold;
+            color: #000;
+            width: 140rpx;
+            margin-left: 44rpx;
+            border-bottom: 1px solid #e5e5e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 10rpx;
+        }
+
+        .ipt {
+            width: 0;
+            height: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+        }
+
+        .placehol {
+            width: 100%;
+            height: 0;
+            position: absolute;
+            top: 9rpx;
+            left: 0;
+            color: #C9CDD7;
+            font-size: 34rpx;
+        }
+
+        input:first-child {
+            margin-left: 0;
+        }
+    }
+
+
+    .goBack {
+        font-size: 26rpx;
+        color: #3D3C2F;
+        text-align: center;
+        margin-top: 48rpx;
+        display: block;
+    }
+
+    .nextlogin {
+        margin-top: 103rpx;
+        background: #C9CDD7;
+        box-shadow: 0 15px 28px 0 rgba(201, 205, 215, 0.74);
+        border-radius: 48rpx;
+        font-size: 36rrpx;
+        line-height: 96rpx;
+        font-family: PingFangSC-Regular;
+        color: #858EA0;
+    }
+
+    .nextloginactive {
+        margin-top: 103rpx;
+        background-image: linear-gradient(-90deg, #FB8E33 0%, #F4663B 100%);
+        box-shadow: 0 6px 14px 0 rgba(225, 47, 10, 0.34);
+        border-radius: 100px;
+        font-family: PingFangSC-Regular;
+        widows: 544rpx;
+        height: 92rpx;
+        font-size: 36rpx;
+        color: #FFFFFF;
+    }
+}

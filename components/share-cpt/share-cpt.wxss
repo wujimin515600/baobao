@@ -1,0 +1,47 @@
+/* component/share-cpt.wxss */
+.layout-fixed-bottom {
+  width: 100vw;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  background: white;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.layout-fixed-bottom .layout-ul {
+  display: flex;
+  height: 232rpx;
+  border-bottom: 1px solid #C9CDD7;
+  width: 100%;
+}
+
+.layout-fixed-bottom .layout-li {
+  background: white;
+  flex: 1;
+  padding: 25rpx 0;
+}
+
+.layout-fixed-bottom .layout-li .icon-image {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+}
+
+.layout-fixed-bottom .layout-li .row {
+  padding: 5rpx 0;
+  text-align: center;
+  width: 100%;
+  font-size: 28rpx;
+  color: #80888C;
+  line-height: 50rpx;
+}
+
+.layout-fixed-bottom .btn-cancel {
+  width: 100%;
+  line-height: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+  z-index: 100;
+}

@@ -1,0 +1,103 @@
+page {
+  background: #fafafa;
+}
+
+#pool-summary .serach {
+  background: #fff;
+  padding-bottom: 30rpx;
+}
+
+#pool-summary .serach input {
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #858EA0;
+  padding-left: 24rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+  background: #F2F0F0;
+  width: 647rpx;
+  border-radius: 41rpx;
+  margin: 0 auto;
+}
+
+#pool-summary .serach_list {
+  margin-top: 30rpx;
+  background: #fff;
+}
+
+#pool-summary .serach_list .list_detail {
+  padding: 32rpx 0 28rpx;
+  border-bottom: 1px solid #E3E4EA;
+  margin: 0 30rpx;
+}
+
+#pool-summary .serach_list .list_detail .detail_title,
+#pool-summary .serach_list .list_detail .detail_time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pool-summary .serach_list .list_detail .detail_title .info .phone,
+#pool-summary .serach_list .list_detail .detail_time .info .phone {
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #171A25;
+}
+
+#pool-summary .serach_list .list_detail .detail_title .info .name,
+#pool-summary .serach_list .list_detail .detail_time .info .name {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #171A25;
+  margin-left: 20rpx;
+}
+
+#pool-summary .serach_list .list_detail .detail_title .money,
+#pool-summary .serach_list .list_detail .detail_time .money {
+  display: flex;
+}
+
+#pool-summary .serach_list .list_detail .detail_title .money .text,
+#pool-summary .serach_list .list_detail .detail_time .money .text {
+  font-family: PingFangSC-Medium;
+  font-size: 26rpx;
+  color: #2576F8;
+}
+
+#pool-summary .serach_list .list_detail .detail_title .money .money_num,
+#pool-summary .serach_list .list_detail .detail_time .money .money_num {
+  font-family: DINAlternate-Bold;
+  font-size: 32rpx;
+  color: #2576F8;
+  margin-left: 5rpx;
+}
+
+#pool-summary .serach_list .list_detail .detail_title .times,
+#pool-summary .serach_list .list_detail .detail_time .times {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #858EA0;
+  line-height: 26rpx;
+}
+
+#pool-summary .serach_list .list_detail .detail_title image,
+#pool-summary .serach_list .list_detail .detail_time image {
+  width: 12rpx;
+  height: 22rpx;
+  vertical-align: middle;
+}
+
+#pool-summary .no_data {
+  font-size: 28rpx;
+  text-align: center;
+  padding: 20rpx 0;
+}
+
+#pool-summary .bitter_end {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #858EA0;
+  text-align: center;
+  margin-top: 30rpx;
+}

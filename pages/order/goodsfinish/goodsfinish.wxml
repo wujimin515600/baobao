@@ -1,0 +1,26 @@
+<view id="goodsfinish">
+    <image src="/images/Bitmap.png" class="titleImg" />
+    <text class="titleText">恭喜哦，已成功收货！</text>
+    <block>
+        <view class="list-finish" hover-class="none" hover-stop-propagation="false">
+            <view class="finistList" wx:for="{{list}}" wx:for-index="index" wx:for-item="itemName" wx:key="index" wx:if="{{!showMore?index<3:index>=0}}">
+                <image src="{{itemName.icon}}" />
+                <text>{{itemName.t_top_name}}</text>
+                <text>{{itemName.quantity}}{{itemName.unit==0?'个':'公斤'}}</text>
+                <text>{{itemName.price}}元</text>
+            </view>
+        </view>
+        <view class="layout-show" wx:if="{{!showMore}}" bindtap="showMore" hover-class="none" hover-stop-propagation="false">
+            <image src="/images/downicon.png" />
+        </view>
+    </block>
+    <view class="summary">
+        <view class="summaryTitle">共收益</view>
+        <view class="summaryMoney">
+            <text>{{total_money}}</text>
+            元
+        </view>
+        <!-- <view class="summarySmallTitle">已计入您的账户</view> -->
+    </view>
+    <button class="finistButton" bindtap="finshButton">完成</button>
+</view>

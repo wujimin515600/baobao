@@ -1,0 +1,17 @@
+<view class="layout-fixed-bottom">
+    <view class="layout-ul">
+        <button class="layout-li" open-type="share">
+            <view class="row" scroll-top="0">
+                <image src="/images/icon-wx.png" class="icon-image"></image>
+            </view>
+            <view class="row" scroll-top="0">微信</view>
+        </button>
+        <view class="layout-li" bindtap="shareWithFriends">
+            <view class="row" scroll-top="0">
+                <image src="/images/icon-share.png" class="icon-image"></image>
+            </view>
+            <view class="row" scroll-top="0">朋友圈</view>
+        </view>
+    </view>
+    <view class="btn-cancel" bindtap="cancel">取消</view>
+</view>

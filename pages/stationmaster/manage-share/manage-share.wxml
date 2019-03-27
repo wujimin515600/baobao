@@ -1,0 +1,12 @@
+<loading hidden="{{loadingHidden}}">加载中...</loading>
+<image class="image-bg" src="{{BG_URL}}" mode="aspectFill" />
+<view class="layout-qrcode">
+    <image class="image-qrcode" src="{{captchaImage}}" mode="aspectFill" />
+</view>
+<view class="button" bindtap="save" wx:if="{{hasAuth}}">保存图片分享到朋友圈</view>
+<view class="button" bindtap="getAuth" wx:else>获取保存到相册权限</view>
+<canvas canvas-id="myCanvas"></canvas>
+<!-- 分享 -->
+<view class="cover-bg" scroll-top="0" wx:if="{{shareVisable}}">
+    <share-cpt bind:cancelShare="cancel" bind:shareWithFriends="closeShareDialog"></share-cpt>
+</view>

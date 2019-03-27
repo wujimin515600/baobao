@@ -1,0 +1,102 @@
+page {
+  background: #fafafa;
+}
+
+#summary_detial .serach {
+  background: #fff;
+  padding-bottom: 30rpx;
+}
+
+#summary_detial .serach .date_style {
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #858EA0;
+  padding-left: 24rpx;
+  line-height: 60rpx;
+  background: #F2F0F0;
+  width: 647rpx;
+  border-radius: 41rpx;
+  margin: 0 auto;
+}
+
+#summary_detial .serach_list {
+  margin-top: 30rpx;
+  background: #fff;
+}
+
+#summary_detial .serach_list .list_detail {
+  padding: 32rpx 0 28rpx;
+  border-bottom: 1px solid #E3E4EA;
+  margin: 0 30rpx;
+}
+
+#summary_detial .serach_list .list_detail .detail_title,
+#summary_detial .serach_list .list_detail .detail_time {
+  display: flex;
+  justify-content: space-between;
+}
+
+#summary_detial .serach_list .list_detail .detail_title .info .phone,
+#summary_detial .serach_list .list_detail .detail_time .info .phone {
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #171A25;
+}
+
+#summary_detial .serach_list .list_detail .detail_title .info .name,
+#summary_detial .serach_list .list_detail .detail_time .info .name {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #171A25;
+  margin-left: 20rpx;
+}
+
+#summary_detial .serach_list .list_detail .detail_title .money .text,
+#summary_detial .serach_list .list_detail .detail_time .money .text {
+  font-family: PingFangSC-Medium;
+  font-size: 26rpx;
+  color: #2576F8;
+  display: inline-block;
+}
+
+#summary_detial .serach_list .list_detail .detail_title .money .money_num,
+#summary_detial .serach_list .list_detail .detail_time .money .money_num {
+  font-family: DINAlternate-Bold;
+  font-size: 32rpx;
+  color: #171A25;
+  margin-left: 5rpx;
+  display: inline-block;
+  line-height: 32rpx;
+}
+
+#summary_detial .serach_list .list_detail .detail_title .times,
+#summary_detial .serach_list .list_detail .detail_time .times {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #858EA0;
+}
+
+#summary_detial .serach_list .list_detail .detail_title .money_num_two,
+#summary_detial .serach_list .list_detail .detail_time .money_num_two {
+  font-family: DINAlternate-Bold;
+  font-size: 32rpx;
+  color: #2576F8;
+}
+
+#summary_detial .serach_list .list_detail .detail_time {
+  margin-top: 18rpx;
+}
+
+#summary_detial .no_data {
+  font-size: 28rpx;
+  text-align: center;
+  padding: 20rpx 0;
+}
+
+#summary_detial .bitter_end {
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #858EA0;
+  text-align: center;
+  margin-top: 30rpx;
+}

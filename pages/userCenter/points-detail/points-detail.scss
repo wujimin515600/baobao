@@ -1,0 +1,92 @@
+page {
+    background: white;
+}
+
+#pool-summary {
+
+
+    .serach_list {
+        margin-top: 30rpx;
+        background: #fff;
+
+        .list_detail {
+            padding: 25rpx 0 28rpx;
+            border-bottom: 1px solid #E3E4EA;
+            margin: 0 30rpx;
+
+            .detail_title {
+                margin-bottom: 10rpx;
+            }
+
+            .detail_title,
+            .detail_time {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+
+                .info {
+                    .phone {
+                        font-family: PingFangSC-Medium;
+                        font-size: 32rpx;
+                        color: #333333;
+                    }
+
+                    .name {
+                        font-family: PingFangSC-Regular;
+                        font-size: 28rpx;
+                        color: #858EA0;
+                        margin-left: 20rpx;
+                    }
+                }
+
+                .money {
+                    display: flex;
+
+                    .text {
+                        font-family: PingFangSC-Medium;
+                        font-size: 26rpx;
+                        color: #2576F8;
+                    }
+
+                    .money_num {
+                        font-family: DINAlternate-Bold;
+                        font-size: 32rpx;
+                        color: #2576F8;
+                        margin-left: 5rpx;
+                    }
+                }
+
+                .times {
+                    font-family: PingFangSC-Regular;
+                    font-size: 26rpx;
+                    color: #858EA0;
+                    line-height: 26rpx;
+                }
+
+                .tips {
+                    text-align: right;
+                    font-family: PingFangSC-Regular;
+                    font-size: 26rpx;
+                    color: #858EA0;
+                }
+            }
+        }
+
+
+    }
+
+    .no_data {
+        font-size: 28rpx;
+        text-align: center;
+        padding: 20rpx 0;
+    }
+
+    .bitter_end {
+        font-family: PingFangSC-Regular;
+        font-size: 26rpx;
+        color: #858EA0;
+        text-align: center;
+        margin-top: 30rpx;
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "邀请活动",
+  "usingComponents": {
+    "share-cpt": "/components/share-cpt/share-cpt"
+  }
+}
