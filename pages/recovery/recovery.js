@@ -351,7 +351,6 @@ Page({
                         let id = checkboxArr[index].id
 
                         let weight = ''
-                      console.log('ok', typeof(checkboxArr[index].price))
                       let unitPrice = Number(checkboxArr[index].price).toFixed(2)
                       
                         let price = ''
