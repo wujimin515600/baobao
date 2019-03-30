@@ -66,7 +66,8 @@ Page({
         for (let index = 0; index < data.length; index++) {
             if (id == data[index].id) {
                 data[index].isactive = true
-                new_data = data[index].sub_types
+                // new_data = data[index].sub_types
+              new_data = data[index].product_sub_type
             }
         }
         for (let index = 0; index < topnav.length; index++) {
