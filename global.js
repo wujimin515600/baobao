@@ -32,7 +32,8 @@
      // 取消订单理由列表
      reasonList: "order/obtain/cancel_reason",
      // 取消订单
-     cancelOrder: 'order/operate/cancel_order/',
+    //  cancelOrder: 'order/operate/cancel_order/',
+   cancelOrder:'order/c/order/cancel/',
      // 一键下单
      order: 'order/operate/one_click_order/',
      // 个人中心二维码
