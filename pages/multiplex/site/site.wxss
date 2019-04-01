@@ -104,6 +104,7 @@
   width: 81rpx;
   height: 81rpx;
   margin-right: 12rpx;
+  min-width: 81rpx;
 }
 
 .listChild .listChild-flex .childlabel .childlabel-list .text .text-name {
